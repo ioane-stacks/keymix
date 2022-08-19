@@ -1,8 +1,15 @@
 import './keymix.css';
+import Navbar from './Navbar';
+import Slider from './Slider';
+import TopHeader from './TopHeader';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <div>
+      <TopHeader />
+      <Navbar />
+      <Slider />
+    </div>
   );
 }
 
