@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-/* TOP HEADER */
+/* TOP-HEADER */
 .top-header {
     width: 100%;
     height: 50px;
@@ -135,6 +135,7 @@ a {
 }
 
 /* LANGUAGE END */
+/* TOP-HEADER END */
 
 .header {
     width: 100%;
