@@ -6,17 +6,13 @@ import Slider from './Slider';
 import TopHeader from './TopHeader';
 import ka from './ka.js';
 import en from './en.js';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [defLang, setDefLang] = useState(ka);
 
   function changeLanguage() {
-    if(defLang === ka) {
-      setDefLang(en);
-    } else {
-      setDefLang(ka);
-    }
+    defLang === ka? setDefLang(en) : setDefLang(ka);
   }
 
   return (

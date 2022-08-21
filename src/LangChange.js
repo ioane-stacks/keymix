@@ -7,15 +7,13 @@ function LangChange({changeLanguage}) {
     const [primaryLang, setPrimaryLang] = useState(langList[0]);
     
     function changeLang() {
-        setPrimaryLang(() => {
-            if(primaryLang === langList[0]) {
-                changeLanguage();
-                return langList[1];
-            } else {
-                changeLanguage();
-                return langList[0];
-            }
-        })
+        if(primaryLang === langList[0]) {
+            setPrimaryLang(langList[1]);
+            changeLanguage();
+        } else {
+            setPrimaryLang(langList[0]);
+            changeLanguage();
+        }
     }
 
     return (

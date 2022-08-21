@@ -1,19 +1,50 @@
 let ka = {
     navbar: {
         menubar: {
-            production: 'Production',
+            production: 'PRODUCTION',
             productionMenu: [
-                'menu1',
-                'menu2',
-                'menu3',
-                'menu4',
-                'menu5'
+                {
+                    productName: 'CARDS',
+                    productTypes: [
+                        'MENU1',
+                        'MENU2',
+                        'MENU3',
+                        'MENU4',
+                    ]
+                },
+                {
+                    productName: 'BRACELET',
+                    productTypes: [
+                        'MENU1',
+                        'MENU2',
+                        'MENU3',
+                        'MENU4',
+                    ]
+                },
+                {
+                    productName: 'STICKERS',
+                    productTypes: [
+                        'MENU1',
+                        'MENU2',
+                        'MENU3',
+                        'MENU4',
+                    ]
+                },
+                {
+                    productName: 'KEYCHAIN',
+                    productTypes: [
+                        'MENU1',
+                        'MENU2',
+                        'MENU3',
+                        'MENU4',
+                    ]
+                }
             ]
         },
-        service: 'Service',
-        galery: 'Galery',
-        information: 'Information',
-        prices: 'Prices',
+        service: 'SERVICE',
+        gallery: 'GALERRY',
+        information: 'INFORMATION',
+        prices: 'PRICES',
     }
 }
 
