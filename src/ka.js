@@ -4,7 +4,7 @@ let ka = {
             production: 'პროდუქცია',
             productionMenu: [
                 {
-                    productName: 'ბარათები',
+                    productName: 'პლასტიკური ბარათები',
                     productTypes: [
                         'მენიუ1',
                         'მენიუ2',
