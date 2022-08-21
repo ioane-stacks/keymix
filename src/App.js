@@ -4,12 +4,25 @@ import '../node_modules/bpg-banner-caps/css/bpg-banner-caps.min.css';
 import Navbar from './Navbar';
 import Slider from './Slider';
 import TopHeader from './TopHeader';
+import ka from './ka.js';
+import en from './en.js';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [defLang, setDefLang] = useState(ka);
+
+  function changeLanguage() {
+    if(defLang === ka) {
+      setDefLang(en);
+    } else {
+      setDefLang(ka);
+    }
+  }
+
   return (
     <div>
-      <TopHeader />
-      <Navbar />
+      <TopHeader changeLanguage={changeLanguage} />
+      <Navbar data={defLang.navbar} />
       <Slider />
     </div>
   );

@@ -1,7 +1,8 @@
 import hlogo from './icons/cardprintlogo.png';
 
-function Navbar(data) {
 
+function Navbar(data) {
+    const navbar = data.data;
     return (
         <div className="header">
             <div className="header-logo">
@@ -9,11 +10,11 @@ function Navbar(data) {
             </div>
             <div className='navbar'>
                 <ul>
-                    <li>პროდუქცია</li>
-                    <li>მომსახურეობა</li>
-                    <li>გალერეა</li>
-                    <li>ინფორმაცია</li>
-                    <li>ფასები</li>
+                    <li>{navbar.menubar.production}</li>
+                    <li>{navbar.service}</li>
+                    <li>{navbar.galery}</li>
+                    <li>{navbar.information}</li>
+                    <li>{navbar.prices}</li>
                 </ul>
             </div>
         </div>

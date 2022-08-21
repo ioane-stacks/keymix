@@ -3,7 +3,11 @@ import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import { SiMaildotru } from 'react-icons/si'
 import LangChange from './LangChange';
 
-function TopHeader() {
+function TopHeader({changeLanguage}) {
+
+    function changLang() {
+        console.log('1111');
+    }
 
     return (
         <div className="top-header">
@@ -32,7 +36,7 @@ function TopHeader() {
             <div className='th-contact'>
                 <a href='#'><SiMaildotru /> <span>youremail@example.com</span></a>
             </div>
-            <LangChange />
+            <LangChange changeLanguage={changeLanguage} />
         </div>
     )
 }
