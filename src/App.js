@@ -7,6 +7,7 @@ import TopHeader from './TopHeader';
 import { ka } from './ka.js';
 import { en } from './en.js';
 import { useState } from 'react';
+import Footer from './Footer';
 
 function App() {
   const [defLang, setDefLang] = useState(ka);
@@ -19,7 +20,8 @@ function App() {
     <div>
       <TopHeader changeLanguage={changeLanguage} />
       <Navbar data={defLang.navbar} />
-      <Slider />
+      {/* <Slider />
+      <Footer /> */}
     </div>
   );
 }
