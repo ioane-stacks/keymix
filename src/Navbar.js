@@ -16,16 +16,7 @@ function Navbar(data) {
                             <ul>
                                 {menubar.productionMenu.map((product, i) => {
                                     return (
-                                        <div className='dropdown-sub' key={i}>
-                                            <li key={i}>{product.productName}</li>
-                                            <div className='dropdown-submenu'>
-                                                <ul>
-                                                    {product.productTypes.map((type, j) => {
-                                                        return <li key={j}>{type}</li>
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <li key={i}>{product.productName}</li>
                                     )
                                 })}
                             </ul>

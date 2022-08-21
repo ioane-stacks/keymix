@@ -1,43 +1,19 @@
-let ka = {
+export const en = {
     navbar: {
         menubar: {
             production: 'PRODUCTION',
             productionMenu: [
                 {
-                    productName: 'CARDS',
-                    productTypes: [
-                        'MENU1',
-                        'MENU2',
-                        'MENU3',
-                        'MENU4',
-                    ]
+                    productName: 'CARDS'
                 },
                 {
-                    productName: 'BRACELET',
-                    productTypes: [
-                        'MENU1',
-                        'MENU2',
-                        'MENU3',
-                        'MENU4',
-                    ]
+                    productName: 'BRACELET'
                 },
                 {
-                    productName: 'STICKERS',
-                    productTypes: [
-                        'MENU1',
-                        'MENU2',
-                        'MENU3',
-                        'MENU4',
-                    ]
+                    productName: 'STICKERS'
                 },
                 {
-                    productName: 'KEYCHAIN',
-                    productTypes: [
-                        'MENU1',
-                        'MENU2',
-                        'MENU3',
-                        'MENU4',
-                    ]
+                    productName: 'KEYCHAIN'
                 }
             ]
         },
@@ -47,5 +23,3 @@ let ka = {
         prices: 'PRICES',
     }
 }
-
-export default ka;

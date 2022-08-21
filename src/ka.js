@@ -1,51 +1,25 @@
-let ka = {
+export const ka = {
     navbar: {
         menubar: {
             production: 'პროდუქცია',
             productionMenu: [
                 {
-                    productName: 'პლასტიკური ბარათები',
-                    productTypes: [
-                        'მენიუ1',
-                        'მენიუ2',
-                        'მენიუ3',
-                        'მენიუ4',
-                    ]
+                    productName: 'პლასტიკური ბარათები'
                 },
                 {
-                    productName: 'სამაჯურები',
-                    productTypes: [
-                        'მენიუ1',
-                        'მენიუ2',
-                        'მენიუ3',
-                        'მენიუ4',
-                    ]
+                    productName: 'სამაჯურები'
                 },
                 {
-                    productName: 'სტიკერები',
-                    productTypes: [
-                        'მენიუ1',
-                        'მენიუ2',
-                        'მენიუ3',
-                        'მენიუ4',
-                    ]
+                    productName: 'სტიკერები'
                 },
                 {
-                    productName: 'ბრელოკები',
-                    productTypes: [
-                        'მენიუ1',
-                        'მენიუ2',
-                        'მენიუ3',
-                        'მენიუ4',
-                    ]
+                    productName: 'ბრელოკები'
                 }
             ]
         },
         service: 'სერვისი',
-        gallery: 'გალერია',
+        gallery: 'გალერეა',
         information: 'ინფორმაცია',
         prices: 'ფასები',
     }
 }
-
-export default ka;

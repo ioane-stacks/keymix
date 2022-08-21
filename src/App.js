@@ -4,8 +4,8 @@ import '../node_modules/bpg-banner-caps/css/bpg-banner-caps.min.css';
 import Navbar from './Navbar';
 import Slider from './Slider';
 import TopHeader from './TopHeader';
-import ka from './ka.js';
-import en from './en.js';
+import { ka } from './ka.js';
+import { en } from './en.js';
 import { useState } from 'react';
 
 function App() {
