@@ -1,0 +1,149 @@
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --wc-height: calc(100vh - 170px);
+    --wc-width: var(--wc-height);
+}
+
+
+
+.wheel-carousel {
+    width: var(--wc-width);
+    height: var(--wc-height);
+    position: absolute;
+    right: calc(var(--wc-width) * -1);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.wheel {
+    position: absolute;
+    width: calc(var(--wc-width) / 3.5);
+    height: calc(var(--wc-width) / 3.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+/* CARDS */
+.card {
+    width: calc(var(--wc-width) / 3.91304347826087);
+    height: calc(var(--wc-height) / 6.1764705882353);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+    -webkit-transition: .2s;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card:hover {
+    width: calc(var(--wc-width) / 3.15);
+    height: calc(var(--wc-height) / 5);
+    z-index: 3;
+}
+
+.card img {
+    transform: rotate(180deg);
+}
+
+/* CARDS */
+
+/* STICKERS */
+.sticker {
+    width: calc(var(--wc-width) / 5.91304347826087);
+    height: calc(var(--wc-height) / 6.1764705882353);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+    -webkit-transition: .2s;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sticker:hover {
+    width: calc(var(--wc-width) / 4.45);
+    height: calc(var(--wc-height) / 5);
+    z-index: 3;
+}
+
+.sticker img {
+    transform: rotate(180deg);
+}
+
+/* STICKERS */
+
+/* BRACELET */
+
+.bracelet {
+    width: calc(var(--wc-width) / 5.91304347826087);
+    height: calc(var(--wc-height) / 5.91304347826087);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+    -webkit-transition: .2s;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracelet:hover {
+    width: calc(var(--wc-width) / 4.45);
+    height: calc(var(--wc-height) / 4.45);
+    z-index: 3;
+}
+
+.bracelet img {
+    transform: rotate(180deg);
+}
+
+/* BRACELET */
+
+.navigator {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(42, 70, 163);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selectedDot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(22, 37, 58);
+    box-shadow: 0 0 5px 3px rgb(39, 156, 252);
+}

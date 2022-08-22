@@ -1,7 +1,7 @@
 import { ImLocation2, ImFacebook, ImYoutube, ImLinkedin } from 'react-icons/im';
 import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import { SiMaildotru } from 'react-icons/si'
-import LangChange from '../components/LangChange';
+import LangChange from './LangChange';
 
 function TopHeader({ changeLanguage }) {
     return (
