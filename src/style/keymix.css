@@ -101,7 +101,7 @@ a {
     font-family: 'bpg banner';
 }
 
-.container-1 {
+.container {
     width: 73%;
     margin-left: auto;
     margin-right: auto;
@@ -254,7 +254,7 @@ a {
 
 /* NAVBAR DROPDOWN SUB START */
 
-.dropdown-submenu {
+/* .dropdown-submenu {
     min-width: 200px;
     display: none;
     position: absolute;
@@ -275,7 +275,7 @@ a {
 
 .dropdown-sub:hover .dropdown-submenu {
     display: block;
-}
+} */
 
 /* NAVBAR DROPDOWN SUB END */
 /* NAVBAR MENU END */

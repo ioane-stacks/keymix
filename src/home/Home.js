@@ -1,4 +1,4 @@
-import Slider from './Slider';
+import Slider from './slider/Slider';
 
 function Home() {
 
