@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import ka from './icons/ka.png';
-import en from './icons/us.png';
+import ka from '../icons/ka.png';
+import en from '../icons/us.png';
 
-function LangChange({changeLanguage}) {
+function LangChange({ changeLanguage }) {
     const [langList, setLangList] = useState([ka, en]);
     const [primaryLang, setPrimaryLang] = useState(langList[0]);
-    
+
     function changeLang() {
-        if(primaryLang === langList[0]) {
+        if (primaryLang === langList[0]) {
             setPrimaryLang(langList[1]);
             changeLanguage();
         } else {

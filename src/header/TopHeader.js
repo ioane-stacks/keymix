@@ -1,14 +1,9 @@
 import { ImLocation2, ImFacebook, ImYoutube, ImLinkedin } from 'react-icons/im';
 import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import { SiMaildotru } from 'react-icons/si'
-import LangChange from './LangChange';
+import LangChange from '../components/LangChange';
 
-function TopHeader({changeLanguage}) {
-
-    function changLang() {
-        console.log('1111');
-    }
-
+function TopHeader({ changeLanguage }) {
     return (
         <div className="top-header">
             <div className="web-icons">

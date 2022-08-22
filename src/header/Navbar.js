@@ -1,8 +1,8 @@
-import hlogo from './icons/cardprintlogo.png';
+import hlogo from '../icons/cardprintlogo.png';
 
 
 function Navbar(data) {
-    const {menubar, service, gallery, information, prices} = data.data;
+    const { menubar, service, gallery, information, prices } = data.data;
     return (
         <div className="header">
             <div className="header-logo">
