@@ -1,11 +1,12 @@
 import CardCarousel from "./tagComponents/CardCarousel";
 import StickerCarousel from "./tagComponents/StickerCarousel";
 import BraceletCarousel from "./tagComponents/BraceletCarousel";
+import KeychainCarousel from "./tagComponents/KeychainCarousel";
 import Navigator from "./Navigator";
 
 import './carousel.css';
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Slider() {
 
@@ -15,13 +16,12 @@ function Slider() {
         switch (carrouselCount) {
             case 0:
                 return <CardCarousel />
-                break;
             case 1:
                 return <StickerCarousel />
-                break;
             case 2:
                 return <BraceletCarousel />
-                break;
+            case 3:
+                return <KeychainCarousel />
             default:
                 return <CardCarousel />
         }

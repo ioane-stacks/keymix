@@ -118,13 +118,44 @@ body {
 
 /* BRACELET */
 
+/* KEYCHAIN */
+
+.keychain {
+    width: calc(var(--wc-width) / 5.91304347826087);
+    height: calc(var(--wc-height) / 7.91304347826087);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+    -webkit-transition: .2s;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.keychain:hover {
+    width: calc(var(--wc-width) / 3.91304347826087);
+    height: calc(var(--wc-height) / 5.91304347826087);
+    z-index: 3;
+}
+
+.keychain img {
+    transform: rotate(180deg);
+}
+
+/* KEYCHAIN */
+
 .navigator {
     position: absolute;
     left: 50%;
     bottom: 15px;
     transform: translateY(-50%);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 

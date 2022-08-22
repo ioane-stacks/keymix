@@ -12,6 +12,7 @@ function Navigator({ changeCarousel }) {
             <div className="dot selectedDot" onClick={(e) => changeCarous(e, 0)}></div>
             <div className="dot" onClick={(e) => changeCarous(e, 1)}></div>
             <div className="dot" onClick={(e) => changeCarous(e, 2)}></div>
+            <div className="dot" onClick={(e) => changeCarous(e, 3)}></div>
         </div>
     )
 }
