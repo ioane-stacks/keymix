@@ -13,15 +13,13 @@ function App() {
   const [defLang, setDefLang] = useState(ka);
 
   function changeLanguage() {
-    defLang === ka? setDefLang(en) : setDefLang(ka);
+    defLang === ka ? setDefLang(en) : setDefLang(ka);
   }
 
   return (
     <div>
       <TopHeader changeLanguage={changeLanguage} />
       <Navbar data={defLang.navbar} />
-      {/* <Slider />
-      <Footer /> */}
     </div>
   );
 }
