@@ -44,6 +44,11 @@ function Cards(object) {
         theta = theta + e.wheelDeltaY * 0.0005;
         wheel.style.transform = `translate(-50%, -50%) rotate(${(theta * (360 / Math.PI))}deg)`;
     });
+
+    wheel.addEventListener('scroll', (e) => {
+        theta = theta + e.wheelDeltaY * 0.0005;
+        wheel.style.transform = `translate(-50%, -50%) rotate(${(theta * (360 / Math.PI))}deg)`;
+    })
 }
 
 export default Cards;

@@ -291,6 +291,7 @@ a {
     background-color: rgb(81, 38, 109);
     position: relative;
     display: flex;
+    overflow: hidden;
 }
 
 .footer {
