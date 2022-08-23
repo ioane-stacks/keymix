@@ -15,7 +15,7 @@
     --fs-2: 1.4rem;
     --fs-3: 1rem;
 
-    --slider-height: 940px;
+    --slider-height: calc(100vh - 140px);
 }
 
 /* FONTS */

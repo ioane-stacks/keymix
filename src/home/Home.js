@@ -3,7 +3,9 @@ import Slider from './slider/Slider';
 function Home() {
 
     return (
-        <Slider />
+        <div>
+            <Slider />
+        </div>
     )
 }
 

@@ -29,7 +29,6 @@ body {
     transform: translate(-50%, -50%);
     background-color: green;
     border-radius: 50%;
-    scroll-behavior: smooth;
 }
 
 
