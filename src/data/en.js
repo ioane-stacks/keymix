@@ -31,6 +31,7 @@ export const en = {
         prices: 'PRICES',
     },
     bodyInformation: {
+        productionName: 'PRODUCTION',
         priority: [
             {
                 priorityIcon: <AiOutlineCheck />,

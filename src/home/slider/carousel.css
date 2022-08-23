@@ -164,13 +164,17 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgb(42, 70, 163);
+    background-color: rgb(255, 255, 255);
     display: inline-block;
     cursor: pointer;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.dot:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
 .selectedDot {

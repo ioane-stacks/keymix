@@ -31,6 +31,7 @@ export const ka = {
         prices: 'ფასები',
     },
     bodyInformation: {
+        productionName: 'პროდუქცია',
         priority: [
             {
                 priorityIcon: <AiOutlineCheck />,

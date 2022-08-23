@@ -1,4 +1,7 @@
-function Body({ priority, productions }) {
+function Body({ bodyInformation }) {
+
+    const {productionName, priority, productions } = bodyInformation; 
+
     return (
         <div className="container">
             <section className="priority">
@@ -10,7 +13,7 @@ function Body({ priority, productions }) {
                 })}
             </section>
             <div className="productions-container">
-                <h1>პროდუქცია</h1>
+                <h1>{productionName}</h1>
                 <section className='productions'>
 
                     {productions.map((product, i) => {
