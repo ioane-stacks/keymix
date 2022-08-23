@@ -1,12 +1,15 @@
 import './style/mixid.css';
 import '../node_modules/bpg-banner/css/bpg-banner.min.css';
 import '../node_modules/bpg-banner-caps/css/bpg-banner-caps.min.css';
+import '../node_modules/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css';
 import Navbar from './header/Navbar';
 import TopHeader from './header/TopHeader';
+import Footer from './footer/Footer';
 import Home from './home/Home';
 import { ka } from './data/ka.js';
 import { en } from './data/en.js';
 import { useState } from 'react';
+
 
 function App() {
   const [defLang, setDefLang] = useState(ka);
@@ -19,7 +22,8 @@ function App() {
     <div>
       <TopHeader changeLanguage={changeLanguage} />
       <Navbar data={defLang.navbar} />
-      <Home />
+      <Home bodyInformation={defLang.bodyInformation}/>
+      <Footer />
     </div>
   );
 }
