@@ -1,7 +1,8 @@
 
-function Cards(object) {
+function Engine(object) {
     const cards = document.querySelectorAll(`.${object}`);
     const wheel = document.querySelector('.wheel');
+    const wheelCarousel = document.querySelector('.wheel-carousel');
 
     let WC_WIDTH = parseFloat(getComputedStyle(document.querySelector('.wheel-carousel')).getPropertyValue('width'));
     let WHEEL_CFC = 3.5;
@@ -40,7 +41,7 @@ function Cards(object) {
     });
 
     theta = 0.0;
-    wheel.addEventListener('wheel', (e) => {
+    wheelCarousel.addEventListener('wheel', (e) => {
         e.preventDefault();
         theta = theta + e.wheelDeltaY * 0.0005;
         wheel.style.transform = `translate(-50%, -50%) rotate(${(theta * (360 / Math.PI))}deg)`;
@@ -48,4 +49,4 @@ function Cards(object) {
 
 }
 
-export default Cards;
+export default Engine;

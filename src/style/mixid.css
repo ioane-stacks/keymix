@@ -6,8 +6,9 @@
 
 :root {
     --bg-darkgray: rgb(39, 39, 39);
-    --bg-lightsilver: #ededed;
+    --bg-lightsilver: #fafafa;
     --bg-lightersilver: #ddd;
+    --bg-silver: #888;
 
     --c-darkgray: #333;
 
@@ -26,8 +27,8 @@
 @media screen and (max-width: 1366px) {
     :root {
         --fs-1: 1.6rem;
-        --fs-2: 1.16rem;
-        --fs-3: .9rem;
+        --fs-2: 1.06rem;
+        --fs-3: .83rem;
 
         --slider-height: calc(100vh - 140px);
     }
@@ -35,6 +36,11 @@
 
 body {
     background-color: #efefef;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    display: none;
 }
 
 a {
@@ -103,12 +109,6 @@ a {
     font-size: var(--fs-3);
     margin-left: 20px;
     font-family: 'bpg banner';
-}
-
-.container {
-    width: 73%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* CONTACT END */
@@ -197,6 +197,8 @@ a {
 
 .navbar ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul li {
@@ -227,6 +229,7 @@ a {
 }
 
 .dropdown-menu ul {
+    display: block;
     margin-top: 40px;
     background-color: var(--bg-lightsilver);
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -285,6 +288,9 @@ a {
 /* NAVBAR MENU END */
 /* HEADER END */
 
+
+/* SLIDER START */
+
 .slider {
     width: 100%;
     height: var(--slider-height);
@@ -294,6 +300,48 @@ a {
     overflow: hidden;
 }
 
+/* SLIDER END */
+
+
+/* BODY START  */
+
+.priority {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    user-select: none;
+    padding: 20px;
+}
+
+.priority article {
+    padding: 20px 0px;
+    font-family: 'bpg banner caps';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--bg-darkgray);
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+.priority article span {
+    padding: 10px;
+    background-color: #333;
+    color: var(--bg-lightsilver);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: var(--fs-2);
+}
+
+/* BODY END */
+
+
+/* FOOTER START */
 .footer {
     width: 100%;
     height: 300px;
@@ -309,6 +357,24 @@ a {
     align-items: center;
     justify-content: center;
     border-right: 1px solid #eee;
+}
+
+/* FOOTER END */
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .container {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 
