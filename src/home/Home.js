@@ -6,7 +6,7 @@ function Home({bodyInformation}) {
     return (
         <div>
             <Slider />
-            <Body productions={bodyInformation.productions}/>
+            <Body priority={bodyInformation.priority} productions={bodyInformation.productions}/>
         </div>
     )
 }

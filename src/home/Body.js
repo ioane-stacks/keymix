@@ -1,14 +1,13 @@
-import { AiOutlineCheck, AiFillLike } from 'react-icons/ai';
-import { FaGlobeEurope } from 'react-icons/fa';
-
-function Body({ productions }) {
-
+function Body({ priority, productions }) {
     return (
         <div className="container">
             <section className="priority">
-                <article><span><AiOutlineCheck /></span> 100% ხარისხის გარანტია</article>
-                <article><span><AiFillLike /></span> 72 საათის მანძილზე ხელმისაწვდომია</article>
-                <article><span><FaGlobeEurope /></span> დამზადებულია საქართველოში</article>
+                {priority.map((prior, i) => {
+                    const { priorityIcon, priorityDescription } = prior;
+                    return (
+                        <article key={i}><span>{ priorityIcon }</span> { priorityDescription }</article>
+                    )
+                })}
             </section>
             <div className="productions-container">
                 <h1>პროდუქცია</h1>
