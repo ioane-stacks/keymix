@@ -72,5 +72,28 @@ export const ka = {
                 more: 'მეტი...'
             }
         ]
+    },
+    footer: {
+        socialPages: {
+            socialPageName: 'სოციალური გვერდები',
+            facebook: 'ფეისბუქი',
+            instagram: 'ინსტაგრამი',
+            linkedin: 'ლინკდინი',
+            youtube: 'იუთუბი'
+        },
+        aboutUs: {
+            aboutUsName: 'ჩვენს შესახებ',
+            termsAndConditions: 'ვადები და პირობები',
+            termsOfUse: 'მოხმარების პირობები',
+            privacyPolicy: 'კონფიდენციალურობის პოლიტიკა',
+            siteMap: 'საიტის რუკა'
+        },
+        contact: {
+            contactName: 'კონტაქტი',
+            phoneNumber: '555 123 456',
+            email: 'youremail@example.com',
+            address: 'რაღაც მისამართი, რაღაც ნომერი 2',
+            findUs: 'გვიპოვეთ რუკაზე',
+        }
     }
 }

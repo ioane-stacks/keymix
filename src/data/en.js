@@ -72,5 +72,28 @@ export const en = {
                 more: 'more...'
             }
         ]
+    },
+    footer: {
+        socialPages: {
+            socialPageName: 'SOCIAL PAGES',
+            facebook: 'facebook',
+            instagram: 'instagram',
+            linkedin: 'linkedin',
+            youtube: 'youtube'
+        },
+        aboutUs: {
+            aboutUsName: 'ABOUT US',
+            termsAndConditions: 'Terms and Conditions',
+            termsOfUse: 'Terms of Use',
+            privacyPolicy: 'Privacy Policy',
+            siteMap: 'Site Map'
+        },
+        contact: {
+            contactName: 'CONTACT',
+            phoneNumber: '555 123 456',
+            email: 'youremail@example.com',
+            address: 'Some Address, Some Number 2',
+            findUs: 'Find on Map',
+        }
     }
 }
