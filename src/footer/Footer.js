@@ -2,12 +2,13 @@ import { ImLocation2, ImFacebook, ImYoutube, ImLinkedin } from "react-icons/im";
 import { FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { RiTreasureMapFill } from 'react-icons/ri';
+import { defaultContent } from '../data/defaultContent.js';
 
-function Footer( { footerData } ) {
+function Footer() {
     
-    const {socialPageName, facebook, instagram, linkedin, youtube} = footerData.socialPages;
-    const {aboutUsName, termsAndConditions, termsOfUse, privacyPolicy, siteMap} = footerData.aboutUs;
-    const {contactName, phoneNumber, email, address, findUs} = footerData.contact;
+    const {socialPageName, facebook, instagram, linkedin, youtube} = defaultContent.footer.socialPages;
+    const {aboutUsName, termsAndConditions, termsOfUse, privacyPolicy, siteMap} = defaultContent.footer.aboutUs;
+    const {contactName, phoneNumber, email, address, findUs} = defaultContent.footer.contact;
 
       return (
             <div className="footer">

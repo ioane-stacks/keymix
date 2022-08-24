@@ -1,6 +1,8 @@
-function Body({ bodyInformation }) {
+import { defaultContent } from '../data/defaultContent.js';
 
-    const {productionName, priority, productions } = bodyInformation; 
+function Body() {
+
+    const {productionName, priority, productions } = defaultContent.bodyInformation; 
 
     return (
         <div className="container">

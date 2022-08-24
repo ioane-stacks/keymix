@@ -12,15 +12,19 @@ export const ka = {
             production: 'პროდუქცია',
             productionMenu: [
                 {
+                    id: 1,
                     productName: 'პლასტიკური ბარათები'
                 },
                 {
+                    id: 2,
                     productName: 'სამაჯურები'
                 },
                 {
+                    id: 3,
                     productName: 'სტიკერები'
                 },
                 {
+                    id: 4,
                     productName: 'ბრელოკები'
                 }
             ]

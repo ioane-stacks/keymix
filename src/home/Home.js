@@ -1,12 +1,12 @@
 import Body from './Body';
 import Slider from './slider/Slider';
 
-function Home({bodyInformation}) {
+function Home() {
 
     return (
         <div>
             <Slider />
-            <Body bodyInformation={bodyInformation} />
+            <Body />
         </div>
     )
 }
