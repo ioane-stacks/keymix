@@ -10,6 +10,7 @@ import Footer from "./footer/Footer";
 import Home from "./home/Home";
 
 import Production from "./pages/Production";
+import Product from "./pages/Product";
 import Service from "./pages/Service";
 
 
@@ -18,6 +19,7 @@ import { en } from "./data/en.js";
 import { defaultContent } from "./data/defaultContent.js";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import Layout from "./Layout";
 
 function App() {
   const [defLang, setDefLang] = useState(ka);
@@ -34,17 +36,17 @@ function App() {
 
   return (
     <div>
-      <TopHeader changeLanguage={changeLanguage} />
-      <Navbar />
       <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="service" element={<Service />} />
-        <Route path="production" element={<Production />}>
-          <Route path=":id" element={ <Service /> } />
+        <Route path="/" element={<Layout changeLanguage={changeLanguage} />}>
+          <Route index element={<Home />} />
+          <Route path="production" element={<Production />}>
+            <Route path=":productId" element={<Product />} />
+          </Route>
+          <Route path="service" element={<Service />} />
+          <Route path="*" element={<Home />} />
         </Route>
-        <Route path="*" element={ <Home /> } />
       </Routes>
-      <Footer />
+
     </div>
   );
 }

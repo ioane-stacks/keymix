@@ -1,6 +1,6 @@
 import hlogo from '../icons/cardprintlogo.png';
 import { defaultContent } from '../data/defaultContent.js';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 
 function Navbar() {
@@ -13,12 +13,12 @@ function Navbar() {
             <div className='navbar'>
                 <ul>
                     <li className='dropdown'>
-                        <NavLink to="production"><span>{menubar.production}</span></NavLink>
+                        <NavLink to="production/"><span>{menubar.production}</span></NavLink>
                         <div className='dropdown-menu'>
                             <ul>
                                 {menubar.productionMenu.map((product) => {
                                     return (
-                                        <li key={product.id}><Link to={'production/' + product.id} key={product.id}>{product.productName}</Link></li>
+                                        <NavLink to={'production/' + product.id} key={product.id}><li>{product.productName}</li></NavLink>
                                     )
                                 })}
                             </ul>
