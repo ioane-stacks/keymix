@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/keymix/static/css/main.eb9be424.css",
+    "main.js": "/keymix/static/js/main.87ed6fad.js",
+    "static/media/cardprintlogo.png": "/keymix/static/media/cardprintlogo.8258f0c7ec71c91d3eed.png",
+    "static/media/bpg-banner-webfont.svg": "/keymix/static/media/bpg-banner-webfont.9f8151ed1117bf6fce29.svg",
+    "static/media/bpg-banner-caps-webfont.svg": "/keymix/static/media/bpg-banner-caps-webfont.21d62c4353e5f2dfbf16.svg",
+    "static/media/bpg-glaho-web-caps-webfont.svg": "/keymix/static/media/bpg-glaho-web-caps-webfont.fc0a7b05253a452ba7c6.svg",
+    "static/media/bpg-banner-caps-webfont.eot": "/keymix/static/media/bpg-banner-caps-webfont.19f7928bead2b00c3af0.eot",
+    "static/media/bpg-banner-caps-webfont.ttf": "/keymix/static/media/bpg-banner-caps-webfont.bb45bacce6f3c90b72c2.ttf",
+    "static/media/bpg-banner-webfont.ttf": "/keymix/static/media/bpg-banner-webfont.b56ed255cc8a95469bf3.ttf",
+    "static/media/bpg-glaho-web-caps-webfont.ttf": "/keymix/static/media/bpg-glaho-web-caps-webfont.204e3f241ed5c8a61fdf.ttf",
+    "static/media/us.png": "/keymix/static/media/us.d38b1cc751898b04eb26.png",
+    "static/media/bpg-banner-caps-webfont.woff": "/keymix/static/media/bpg-banner-caps-webfont.65231a49e8e02e57aa29.woff",
+    "static/media/bpg-banner-webfont.woff": "/keymix/static/media/bpg-banner-webfont.c12f4d2f90e784838576.woff",
+    "static/media/bpg-banner-webfont.eot": "/keymix/static/media/bpg-banner-webfont.66fae8ddf2e8630419b5.eot",
+    "static/media/bpg-glaho-web-caps-webfont.woff": "/keymix/static/media/bpg-glaho-web-caps-webfont.d7dd5df285167db2fe29.woff",
+    "static/media/bpg-banner-caps-webfont.woff2": "/keymix/static/media/bpg-banner-caps-webfont.28ce0f501b37c76b95fd.woff2",
+    "static/media/bpg-banner-webfont.woff2": "/keymix/static/media/bpg-banner-webfont.8b974f7eeac754b4875a.woff2",
+    "static/media/bpg-glaho-web-caps-webfont.eot": "/keymix/static/media/bpg-glaho-web-caps-webfont.5a01f03420b50129777c.eot",
+    "static/media/ka.png": "/keymix/static/media/ka.f56dced1b661fb2e7874.png",
+    "static/media/bpg-glaho-web-caps-webfont.woff2": "/keymix/static/media/bpg-glaho-web-caps-webfont.5b1855ef001ed6b70526.woff2",
+    "index.html": "/keymix/index.html",
+    "main.eb9be424.css.map": "/keymix/static/css/main.eb9be424.css.map",
+    "main.87ed6fad.js.map": "/keymix/static/js/main.87ed6fad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb9be424.css",
+    "static/js/main.87ed6fad.js"
+  ]
+}
