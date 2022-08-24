@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/keymix/static/css/main.eb9be424.css",
-    "main.js": "/keymix/static/js/main.87ed6fad.js",
+    "main.js": "/keymix/static/js/main.8089fc19.js",
     "static/media/cardprintlogo.png": "/keymix/static/media/cardprintlogo.8258f0c7ec71c91d3eed.png",
     "static/media/bpg-banner-webfont.svg": "/keymix/static/media/bpg-banner-webfont.9f8151ed1117bf6fce29.svg",
     "static/media/bpg-banner-caps-webfont.svg": "/keymix/static/media/bpg-banner-caps-webfont.21d62c4353e5f2dfbf16.svg",
@@ -22,10 +22,10 @@
     "static/media/bpg-glaho-web-caps-webfont.woff2": "/keymix/static/media/bpg-glaho-web-caps-webfont.5b1855ef001ed6b70526.woff2",
     "index.html": "/keymix/index.html",
     "main.eb9be424.css.map": "/keymix/static/css/main.eb9be424.css.map",
-    "main.87ed6fad.js.map": "/keymix/static/js/main.87ed6fad.js.map"
+    "main.8089fc19.js.map": "/keymix/static/js/main.8089fc19.js.map"
   },
   "entrypoints": [
     "static/css/main.eb9be424.css",
-    "static/js/main.87ed6fad.js"
+    "static/js/main.8089fc19.js"
   ]
 }
