@@ -1,37 +1,45 @@
-import hlogo from '../icons/cardprintlogo.png';
-import { defaultContent } from '../data/defaultContent.js';
-import { Link, NavLink, Outlet } from 'react-router-dom';
-
+import hlogo from "../icons/mixid.svg";
+import { defaultContent } from "../data/defaultContent.js";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 function Navbar() {
     const { menubar, service, gallery, information, prices } = defaultContent.navbar;
     return (
         <div className="header">
             <div className="header-logo">
-                <NavLink to="/" end><img src={hlogo} alt='logo'></img></NavLink>
+                <NavLink to="/" end>
+                    <img src={hlogo} alt="logo"></img>
+                    <p>IDentify your IDea</p>
+                </NavLink>
             </div>
-            <div className='navbar'>
+            <div className="navbar">
                 <ul>
-                    <li className='dropdown'>
-                        <NavLink to="production/"><span>{menubar.production}</span></NavLink>
-                        <div className='dropdown-menu'>
+                    <li className="dropdown">
+                        <NavLink to="production/">
+                            <span>{menubar.production}</span>
+                        </NavLink>
+                        <div className="dropdown-menu">
                             <ul>
                                 {menubar.productionMenu.map((product) => {
                                     return (
-                                        <NavLink to={'production/' + product.id} key={product.id}><li>{product.productName}</li></NavLink>
-                                    )
+                                        <NavLink to={"production/" + product.id} key={product.id}>
+                                            <li>{product.productName}</li>
+                                        </NavLink>
+                                    );
                                 })}
                             </ul>
                         </div>
                     </li>
-                    <li><NavLink to="/service">{service}</NavLink></li>
+                    <li>
+                        <NavLink to="/service">{service}</NavLink>
+                    </li>
                     <li>{gallery}</li>
                     <li>{information}</li>
                     <li>{prices}</li>
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbar;

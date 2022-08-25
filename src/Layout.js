@@ -4,7 +4,6 @@ import Navbar from "./header/Navbar";
 import Footer from "./footer/Footer";
 
 function Layout({ changeLanguage }) {
-
     return (
         <div>
             <TopHeader changeLanguage={changeLanguage} />
@@ -12,7 +11,7 @@ function Layout({ changeLanguage }) {
             <Outlet />
             <Footer />
         </div>
-    )
+    );
 }
 
 export default Layout;
