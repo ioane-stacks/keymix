@@ -1,6 +1,6 @@
 import hlogo from "../icons/mixid.svg";
 import { defaultContent } from "../data/defaultContent.js";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     const { menubar, service, gallery, information, prices } = defaultContent.navbar;
@@ -9,10 +9,12 @@ function Navbar() {
             <div className="header-logo">
                 <NavLink to="/" end>
                     <img src={hlogo} alt="logo"></img>
-                    <p>IDentify your IDea</p>
+                    <p>
+                        <span>ID</span>entify your <span>ID</span>ea
+                    </p>
                 </NavLink>
             </div>
-            <div className="navbar">
+            <nav className="navbar">
                 <ul>
                     <li className="dropdown">
                         <NavLink to="production/">
@@ -37,7 +39,7 @@ function Navbar() {
                     <li>{information}</li>
                     <li>{prices}</li>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }

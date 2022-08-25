@@ -2,51 +2,34 @@ import { useEffect, useState } from "react";
 import { Routes, Route, Link, Outlet, useParams } from "react-router-dom";
 import { defaultContent } from "../data/defaultContent.js";
 
-import ProductionSection from "../home/ProductionSection.js";
-
-import cards from "../icons/Production/cards.svg";
+import cards from "../icons/Production/cards.png";
 
 export function Production() {
     const params = useParams();
+    const icons = [cards, cards, cards, cards];
+    const { production, productionMenu } = defaultContent.navbar.menubar;
 
     if (params.productId) {
         return <Outlet />;
-    } else {
-        return (
-            <div className="container">
-                <div className="productions-page">
-                    <h1>პროდუცია</h1>
-                    <div className="pp-products">
-                        <Link to="/production/1" key={1}>
-                            <article>
-                                <h3>პლასტიკური ბარათები</h3>
-                                <img src={cards} alt="cards" />
-                            </article>
-                        </Link>
-                        <Link to="/production/1" key={1}>
-                            <article>
-                                <h3>სამაჯურები</h3>
-                                <img src={cards} alt="cards" />
-                            </article>
-                        </Link>
-                        <Link to="/production/1" key={1}>
-                            <article>
-                                <h3>სტიკერები</h3>
-                                <img src={cards} alt="cards" />
-                            </article>
-                        </Link>
-                        <Link to="/production/1" key={1}>
-                            <article>
-                                <h3>ბრელოკები</h3>
-                                <img src={cards} alt="cards" />
-                            </article>
-                        </Link>
-                    </div>
+    }
+
+    return (
+        <div className="container">
+            <div className="productions-page">
+                <h1>{production}</h1>
+                <div className="pp-products">
+                    {productionMenu.map((product, i) => {
+                        return (
+                            <Link to={`/production/${product.id}`} key={product.id}>
+                                <article>
+                                    <h3>{product.productName}</h3>
+                                    <img src={icons[i]} alt={product.productName} />
+                                </article>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
-            // <div className="container">
-            //     <ProductionSection />
-            // </div>
-        );
-    }
+        </div>
+    );
 }
