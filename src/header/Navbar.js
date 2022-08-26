@@ -59,9 +59,15 @@ function Navbar() {
 					<li>
 						<NavLink to="/service">{service}</NavLink>
 					</li>
-					<li>{gallery}</li>
-					<li>{information}</li>
-					<li>{prices}</li>
+					<li>
+						<NavLink to="/gallery">{gallery}</NavLink>
+					</li>
+					<li>
+						<NavLink to="/information">{information}</NavLink>
+					</li>
+					<li>
+						<NavLink to="/prices">{prices}</NavLink>
+					</li>
 				</ul>
 			</nav>
 			<div className="navbar-container">
@@ -78,13 +84,13 @@ function Navbar() {
 						<NavLink to="/service">
 							<li onClick={closeMenu}>{service}</li>
 						</NavLink>
-						<NavLink to="/service">
+						<NavLink to="/gallery">
 							<li onClick={closeMenu}>{gallery}</li>
 						</NavLink>
-						<NavLink to="/service">
+						<NavLink to="/information">
 							<li onClick={closeMenu}>{information}</li>
 						</NavLink>
-						<NavLink to="/service">
+						<NavLink to="/prices">
 							<li onClick={closeMenu}>{prices}</li>
 						</NavLink>
 					</ul>
