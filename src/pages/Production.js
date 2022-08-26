@@ -8,31 +8,31 @@ import Sticker from "../icons/Production/Sticker.svg";
 import Keyfog from "../icons/Production/Keyfog.svg";
 
 export function Production() {
-    const params = useParams();
-    const icons = [cards, Bracelet, Sticker, Keyfog];
-    const { production, productionMenu } = defaultContent.navbar.menubar;
+	const params = useParams();
+	const icons = [cards, Bracelet, Sticker, Keyfog];
+	const { productionName, productionMenu } = defaultContent.navbar.menubar;
 
-    if (params.productId) {
-        return <Outlet />;
-    }
+	if (params.productId) {
+		return <Outlet />;
+	}
 
-    return (
-        <div className="container">
-            <div className="productions-page">
-                <h1>{production}</h1>
-                <div className="pp-products">
-                    {productionMenu.map((product, i) => {
-                        return (
-                            <Link to={`/production/${product.id}`} key={product.id}>
-                                <article>
-                                    <h3>{product.productName}</h3>
-                                    <img src={icons[i]} alt={product.productName} />
-                                </article>
-                            </Link>
-                        );
-                    })}
-                </div>
-            </div>
-        </div>
-    );
+	return (
+		<div className="container">
+			<div className="productions-page">
+				<h1>{productionName}</h1>
+				<div className="pp-products">
+					{productionMenu.map((product, i) => {
+						return (
+							<Link to={`/production/${product.id}`} key={product.id}>
+								<article>
+									<h3>{product.productName}</h3>
+									<img src={icons[i]} alt={product.productName} />
+								</article>
+							</Link>
+						);
+					})}
+				</div>
+			</div>
+		</div>
+	);
 }
