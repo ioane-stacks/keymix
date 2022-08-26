@@ -9,7 +9,7 @@ import { GiGemPendant } from "react-icons/gi";
 export const ka = {
     navbar: {
         menubar: {
-            production: "პროდუქცია",
+            productionName: "პროდუქცია",
             productionMenu: [
                 {
                     id: 1,
