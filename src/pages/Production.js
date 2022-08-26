@@ -3,10 +3,11 @@ import { Routes, Route, Link, Outlet, useParams } from "react-router-dom";
 import { defaultContent } from "../data/defaultContent.js";
 
 import cards from "../icons/Production/PlasticCard.svg";
+import Bracelet from "../icons/Production/Bracelet.svg";
 
 export function Production() {
     const params = useParams();
-    const icons = [cards, cards, cards, cards];
+    const icons = [cards, Bracelet, cards, cards];
     const { production, productionMenu } = defaultContent.navbar.menubar;
 
     if (params.productId) {
