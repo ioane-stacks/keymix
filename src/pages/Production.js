@@ -4,10 +4,11 @@ import { defaultContent } from "../data/defaultContent.js";
 
 import cards from "../icons/Production/PlasticCard.svg";
 import Bracelet from "../icons/Production/Bracelet.svg";
+import Sticker from "../icons/Production/Sticker.svg";
 
 export function Production() {
     const params = useParams();
-    const icons = [cards, Bracelet, cards, cards];
+    const icons = [cards, Bracelet, Sticker, cards];
     const { production, productionMenu } = defaultContent.navbar.menubar;
 
     if (params.productId) {
