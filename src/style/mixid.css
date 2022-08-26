@@ -500,7 +500,6 @@ a {
 
 .pp-products a article {
     width: 100%;
-    height: 230px;
 }
 
 .pp-products a article h3 {
@@ -515,13 +514,13 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
+    /* filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7)); */
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 .pp-products a article img:hover {
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(3px 3px 0px rgba(5, 47, 94, 1));
 }
 
 /* PRODUCTIONS PAGE END */
@@ -615,12 +614,16 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+    .container {
+        width: 73%;
+    }
+
     .productions {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .pp-products {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
