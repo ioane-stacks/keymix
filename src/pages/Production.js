@@ -5,10 +5,11 @@ import { defaultContent } from "../data/defaultContent.js";
 import cards from "../icons/Production/PlasticCard.svg";
 import Bracelet from "../icons/Production/Bracelet.svg";
 import Sticker from "../icons/Production/Sticker.svg";
+import Keyfog from "../icons/Production/Keyfog.svg";
 
 export function Production() {
     const params = useParams();
-    const icons = [cards, Bracelet, Sticker, cards];
+    const icons = [cards, Bracelet, Sticker, Keyfog];
     const { production, productionMenu } = defaultContent.navbar.menubar;
 
     if (params.productId) {
