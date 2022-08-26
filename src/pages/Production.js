@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route, Link, Outlet, useParams } from "react-router-dom";
 import { defaultContent } from "../data/defaultContent.js";
 
-import cards from "../icons/Production/cards.png";
+import cards from "../icons/Production/PlasticCard.svg";
 
 export function Production() {
     const params = useParams();
