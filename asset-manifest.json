@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/keymix/static/css/main.dc47a917.css",
-    "main.js": "/keymix/static/js/main.583ba6a7.js",
+    "main.css": "/keymix/static/css/main.dd0ff193.css",
+    "main.js": "/keymix/static/js/main.afa7d1ec.js",
     "static/media/bpg-banner-webfont.svg": "/keymix/static/media/bpg-banner-webfont.9f8151ed1117bf6fce29.svg",
     "static/media/bpg-banner-caps-webfont.svg": "/keymix/static/media/bpg-banner-caps-webfont.21d62c4353e5f2dfbf16.svg",
     "static/media/bpg-glaho-web-caps-webfont.svg": "/keymix/static/media/bpg-glaho-web-caps-webfont.fc0a7b05253a452ba7c6.svg",
@@ -25,11 +25,11 @@
     "static/media/Keyfog.svg": "/keymix/static/media/Keyfog.02574bc1c625b2f9d9a39657b8f0ad0c.svg",
     "static/media/mixid.svg": "/keymix/static/media/mixid.cf844960850def771af82d3245e59493.svg",
     "index.html": "/keymix/index.html",
-    "main.dc47a917.css.map": "/keymix/static/css/main.dc47a917.css.map",
-    "main.583ba6a7.js.map": "/keymix/static/js/main.583ba6a7.js.map"
+    "main.dd0ff193.css.map": "/keymix/static/css/main.dd0ff193.css.map",
+    "main.afa7d1ec.js.map": "/keymix/static/js/main.afa7d1ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc47a917.css",
-    "static/js/main.583ba6a7.js"
+    "static/css/main.dd0ff193.css",
+    "static/js/main.afa7d1ec.js"
   ]
 }
