@@ -1,0 +1,1 @@
+const defaultContent2 = {};

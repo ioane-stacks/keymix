@@ -575,8 +575,106 @@ a {
 	filter: drop-shadow(3px 3px 0px rgba(5, 47, 94, 1));
 }
 
-/* PRODUCTIONS PAGE END */
+/* PRODUCTIONS PRODUCT TYPE PAGE START */
 
+.pp-producttype {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3.5rem;
+	padding: 50px;
+}
+
+.pp-producttype article {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "bpg banner caps";
+	font-size: var(--fs-3);
+	color: var(--c-darkgray);
+	transition: 0.4s;
+}
+
+.pp-producttype article:hover > img {
+	transform: rotateY(30deg);
+	filter: drop-shadow(10px 7px 5px rgba(0, 0, 0, 0.6));
+}
+
+.pp-producttype article h1 {
+	margin-bottom: 10px;
+}
+
+.pp-producttype article img {
+	transition: 1.2s;
+}
+
+/* PRODUCTIONS PRODUCT TYPE PAGE END */
+
+/* PRODUCT PAGE START  */
+
+.pp-description {
+	width: 100%;
+	height: 480px;
+	display: flex;
+	padding: 40px;
+	user-select: none;
+}
+
+.page-listbox {
+	width: 300px;
+	min-height: 350px;
+	/* border: 1px solid silver; */
+	display: flex;
+	overflow: auto;
+	background-color: white;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.page-listbox::-webkit-scrollbar {
+	display: none;
+}
+
+.page-listbox ul {
+	width: 100%;
+	list-style-type: none;
+}
+.page-listbox ul li {
+	width: 100%;
+	padding: 10px 20px;
+	font-family: "bpg banner caps";
+	/* background-color: white; */
+	border-bottom: 1px solid var(--bg-lightersilver);
+	font-size: var(--fs-4);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.page-listbox ul li:hover {
+	background-color: var(--bg-lightersilver);
+}
+
+.item-selected {
+	background-color: var(--bg-lightersilver2);
+}
+
+.product-image {
+	width: 650px;
+	height: 100%;
+	background-color: #ccc;
+	margin-left: 25px;
+}
+
+.product-description {
+	width: 400px;
+	height: 100%;
+	background-color: #ccc;
+	margin-left: 25px;
+}
+/* PRODUCT PAGE END  */
+
+/* PRODUCTIONS PAGE END */
 /* BODY END */
 
 /* FOOTER START */
@@ -657,6 +755,83 @@ a {
 
 /* PAGE SECTION END */
 
+/* BUTTON START  */
+.btn {
+	padding: 10px 25px 6px 25px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 4px;
+	font-family: "bpg banner caps";
+	font-size: var(--fs-3);
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.btn-blue {
+	background-color: rgb(21, 96, 182);
+}
+
+.btn-success {
+	background-color: rgb(20, 150, 52);
+}
+
+.btn-danger {
+	background-color: rgb(180, 38, 38);
+}
+
+.btn-warning {
+	background-color: rgb(223, 151, 17);
+}
+/* OUTLINE START */
+.btn-outblue {
+	border: 1px solid rgb(21, 96, 182);
+	color: var(--c-darkgray);
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+.btn-outblue:hover {
+	background-color: rgb(21, 96, 182);
+	color: white;
+}
+
+.btn-outsuccess {
+	border: 1px solid rgb(20, 150, 52);
+	color: var(--c-darkgray);
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+.btn-outsuccess:hover {
+	background-color: rgb(20, 150, 52);
+	color: white;
+}
+
+.btn-outdanger {
+	border: 1px solid rgb(180, 38, 38);
+	color: var(--c-darkgray);
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+
+.btn-outdanger:hover {
+	background-color: rgb(180, 38, 38);
+	color: white;
+}
+
+.btn-outwarning {
+	border: 1px solid rgb(223, 151, 17);
+	color: var(--c-darkgray);
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+
+.btn-outwarning:hover {
+	background-color: rgb(223, 151, 17);
+	color: white;
+}
+/* OUTLINE END */
+
+/* BUTTON END */
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 93%;
@@ -727,6 +902,10 @@ a {
 	}
 
 	.footer {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.pp-product {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }

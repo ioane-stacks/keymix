@@ -10,7 +10,7 @@ import Keyfog from "../icons/Production/Keyfog.svg";
 export function Production() {
 	const params = useParams();
 	const icons = [cards, Bracelet, Sticker, Keyfog];
-	const { productionName, productionMenu } = defaultContent.navbar.menubar;
+	const { productionName, productionTypes } = defaultContent.productionPage;
 
 	if (params.productId) {
 		return <Outlet />;
@@ -21,7 +21,7 @@ export function Production() {
 			<div className="productions-page">
 				<h1>{productionName}</h1>
 				<div className="pp-products">
-					{productionMenu.map((product, i) => {
+					{productionTypes.map((product, i) => {
 						return (
 							<Link to={`/production/${product.id}`} key={product.id}>
 								<article>

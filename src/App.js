@@ -6,6 +6,7 @@ import "../node_modules/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css";
 import Home from "./home/Home";
 
 import { Production } from "./pages/Production";
+import ProductType from "./pages/ProductType";
 import Product from "./pages/Product";
 import Service from "./pages/Service";
 import Gallery from "./pages/Gallery";
@@ -14,22 +15,28 @@ import Prices from "./pages/Prices";
 
 import { ka } from "./data/ka.js";
 import { en } from "./data/en.js";
+import { contentka } from "./data/contentka.js";
 import { defaultContent } from "./data/defaultContent.js";
+import { defaultContent2 } from "./data/defaultContent2.js";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 
 function App() {
 	const [defLang, setDefLang] = useState(ka);
+	const [defLang2, setDefLang2] = useState(contentka);
 	defaultContent = defLang;
+	defaultContent2 = contentka;
 
 	function changeLanguage() {
 		if (defLang === ka) {
 			setDefLang(en);
 		} else {
 			setDefLang(ka);
+			setDefLang2(contentka);
 		}
 		defaultContent = defLang;
+		defaultContent2 = defLang2;
 	}
 
 	return (
@@ -38,7 +45,9 @@ function App() {
 				<Route path="/" element={<Layout changeLanguage={changeLanguage} />}>
 					<Route index element={<Home />} />
 					<Route path="production" element={<Production />}>
-						<Route path=":productId" element={<Product />} />
+						<Route path=":productId" element={<ProductType />}>
+							<Route path=":typeId" element={<Product />} />
+						</Route>
 					</Route>
 					<Route path="service" element={<Service />} />
 					<Route path="gallery" element={<Gallery />} />

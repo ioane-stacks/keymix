@@ -6,6 +6,8 @@ import { IoIosWatch } from "react-icons/io";
 import { TbSticker } from "react-icons/tb";
 import { GiGemPendant } from "react-icons/gi";
 
+import magneticStripe from "../icons/Production/PlasticCard.svg";
+
 export const en = {
 	navbar: {
 		menubar: {
@@ -99,5 +101,181 @@ export const en = {
 			address: "Some Address, Some Number 2",
 			findUs: "Find on Map",
 		},
+	},
+
+	// PRODUCTION PAGE
+
+	productionPage: {
+		productionName: "PRODUCTION",
+		productionTypes: [
+			{
+				id: 1,
+				productName: "PLASTIC CARDS",
+				productType: [
+					{
+						id: 1,
+						typeId: "contactlesscard",
+						typeName: "CONTACTLESS SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 1,
+						typeId: "magneticstripecard",
+						typeName: "MAGNETIC STRIP CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 1,
+						typeId: "contactedcard",
+						typeName: "CONTACT SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 1,
+						typeId: "barcodecard",
+						typeName: "BARCODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 1,
+						typeId: "qrcodecard",
+						typeName: "QR CODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 1,
+						typeId: "simplecard",
+						typeName: "SIMPLE CARD",
+						image: magneticStripe,
+					},
+				],
+			},
+			{
+				id: 2,
+				productName: "BRACELETS",
+				productType: [
+					{
+						id: 2,
+						typeId: "contactlesscard",
+						typeName: "CONTACTLESS SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 2,
+						typeId: "magneticstripecard",
+						typeName: "MAGNETIC STRIP CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 2,
+						typeId: "contactedcard",
+						typeName: "CONTACT SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 2,
+						typeId: "barcodecard",
+						typeName: "BARCODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 2,
+						typeId: "qrcodecard",
+						typeName: "QR CODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 2,
+						typeId: "simplecard",
+						typeName: "SIMPLE CARD",
+						image: magneticStripe,
+					},
+				],
+			},
+			{
+				id: 3,
+				productName: "STICKERS",
+				productType: [
+					{
+						id: 3,
+						typeId: "contactlesscard",
+						typeName: "CONTACTLESS SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 3,
+						typeId: "magneticstripecard",
+						typeName: "MAGNETIC STRIP CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 3,
+						typeId: "contactedcard",
+						typeName: "CONTACT SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 3,
+						typeId: "barcodecard",
+						typeName: "BARCODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 3,
+						typeId: "qrcodecard",
+						typeName: "QR CODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 3,
+						typeId: "simplecard",
+						typeName: "SIMPLE CARD",
+						image: magneticStripe,
+					},
+				],
+			},
+			{
+				id: 4,
+				productName: "KEYFOGS",
+				productType: [
+					{
+						id: 4,
+						typeId: "contactlesscard",
+						typeName: "CONTACTLESS SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 4,
+						typeId: "magneticstripecard",
+						typeName: "MAGNETIC STRIP CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 4,
+						typeId: "contactedcard",
+						typeName: "CONTACT SMART CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 4,
+						typeId: "barcodecard",
+						typeName: "BARCODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 4,
+						typeId: "qrcodecard",
+						typeName: "QR CODE CARD",
+						image: magneticStripe,
+					},
+					{
+						id: 4,
+						typeId: "simplecard",
+						typeName: "SIMPLE CARD",
+						image: magneticStripe,
+					},
+				],
+			},
+		],
 	},
 };
