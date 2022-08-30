@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap");
+
 *,
 ::after,
 ::before {
@@ -57,6 +58,10 @@ body::-webkit-scrollbar {
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-family: "bpg banner caps";
 }
 
 /* TOP-HEADER */
@@ -629,7 +634,7 @@ a {
 	display: flex;
 	overflow: auto;
 	background-color: white;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .page-listbox::-webkit-scrollbar {
@@ -642,13 +647,14 @@ a {
 }
 .page-listbox ul li {
 	width: 100%;
-	padding: 10px 20px;
+	padding: 13px 20px 8px 20px;
 	font-family: "bpg banner caps";
 	/* background-color: white; */
 	border-bottom: 1px solid var(--bg-lightersilver);
 	font-size: var(--fs-4);
 	cursor: pointer;
 	transition: 0.2s;
+	display: flex;
 }
 
 .page-listbox ul li:hover {
@@ -662,15 +668,40 @@ a {
 .product-image {
 	width: 650px;
 	height: 100%;
-	background-color: #ccc;
 	margin-left: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.product-image img {
+	height: 100%;
 }
 
 .product-description {
 	width: 400px;
-	height: 100%;
-	background-color: #ccc;
 	margin-left: 25px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.product-description::-webkit-scrollbar {
+	width: 3px;
+}
+
+.product-description::-webkit-scrollbar-thumb {
+	background-color: #333;
+}
+
+.product-description h3 {
+	font-family: "bpg banner caps";
+	margin-bottom: 5px;
+}
+
+.product-description p {
+	font-family: "bpg glaho web caps";
+	margin-bottom: 20px;
 }
 /* PRODUCT PAGE END  */
 
@@ -680,7 +711,7 @@ a {
 /* FOOTER START */
 .footer {
 	width: 100%;
-	min-height: 350px;
+	min-height: 245px;
 	position: relative;
 	background-color: var(--bg-lightsilver);
 	display: grid;
@@ -700,11 +731,11 @@ a {
 
 .footer-name {
 	width: 100%;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .footer-content {
-	padding-left: 40px;
+	padding-left: 25px;
 }
 
 .footer-content ul {
@@ -712,7 +743,7 @@ a {
 }
 
 .footer-content ul li {
-	margin-bottom: 25px;
+	margin-bottom: 17px;
 }
 
 .footer-content ul li a,
@@ -732,7 +763,7 @@ a {
 
 .container {
 	width: 78%;
-	min-height: calc(100vh - 140px - 350px);
+	min-height: calc(100vh - 140px - 245px);
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -830,8 +861,12 @@ a {
 	color: white;
 }
 /* OUTLINE END */
-
 /* BUTTON END */
+
+.sld {
+	height: 300px;
+}
+
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 93%;

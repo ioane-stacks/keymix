@@ -1,4 +1,5 @@
 import "./style/mixid.css";
+
 import "../node_modules/bpg-banner/css/bpg-banner.min.css";
 import "../node_modules/bpg-banner-caps/css/bpg-banner-caps.min.css";
 import "../node_modules/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css";
