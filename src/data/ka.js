@@ -159,7 +159,7 @@ export const ka = {
 				productType: [
 					{
 						id: 2,
-						typeId: "noncontactcard",
+						typeId: "contactlesscard",
 						typeName: "უკონტაქტო სმარტ ბარათი",
 						image: magneticStripe,
 					},
@@ -201,7 +201,7 @@ export const ka = {
 				productType: [
 					{
 						id: 3,
-						typeId: "noncontactcard",
+						typeId: "contactlesscard",
 						typeName: "უკონტაქტო სმარტ ბარათი",
 						image: magneticStripe,
 					},
@@ -243,7 +243,7 @@ export const ka = {
 				productType: [
 					{
 						id: 4,
-						typeId: "noncontactcard",
+						typeId: "contactlesscard",
 						typeName: "უკონტაქტო სმარტ ბარათი",
 						image: magneticStripe,
 					},

@@ -863,10 +863,6 @@ h1 {
 /* OUTLINE END */
 /* BUTTON END */
 
-.sld {
-	height: 300px;
-}
-
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 93%;
