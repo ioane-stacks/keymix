@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./styles/gallerycontent.css";
 
 import { IoClose } from "react-icons/io5";
-import { TbSlideshow } from "react-icons/tb";
 
 function GalleryContent({ images }) {
 	const [image, setImage] = useState(images[0]);
