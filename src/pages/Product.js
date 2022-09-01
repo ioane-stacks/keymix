@@ -10,14 +10,17 @@ function Product() {
 
 	const [detailedInfo, setDetailedInfo] = useState(products.type[0]);
 
-	function changeDescription(typeName) {
+	function changeDescription(typeName, e) {
+		const listItems = document.querySelectorAll(".item-selected");
 		setDetailedInfo(products.type.filter((product) => product.typeName === typeName)[0]);
+		listItems.forEach((x) => x.classList.remove("item-selected"));
+		e.target.classList.add("item-selected");
 	}
 
 	function DisplayDescription() {
 		const { typeName, descriptionName, description, usingFor, usingForDescription, image } = detailedInfo;
 		return (
-			<div style={{ display: "flex" }}>
+			<>
 				<div className="product-image">
 					<img src={image} alt={typeName} />
 				</div>
@@ -27,7 +30,7 @@ function Product() {
 					<h3>{usingFor}</h3>
 					<p>{usingForDescription}</p>
 				</div>
-			</div>
+			</>
 		);
 	}
 
@@ -40,7 +43,7 @@ function Product() {
 						{products.type.map((product, i) => {
 							const { typeName } = product;
 							return (
-								<li className={i === 0 ? "item-selected" : ""} key={i} onClick={() => changeDescription(typeName)}>
+								<li className={i === 0 ? "item-selected" : ""} key={i} onClick={(e) => changeDescription(typeName, e)}>
 									{typeName}
 								</li>
 							);

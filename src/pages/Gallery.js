@@ -1,10 +1,10 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
+import { useState } from "react";
+import GalleryContent from "./GalleryContent";
+import Slider from "./Slider";
+import "./styles/gallery.css";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "./styles.css";
+import { BsImages } from "react-icons/bs";
+import { TbSlideshow } from "react-icons/tb";
 
 function Gallery() {
 	const img1 = "https://images.hdqwalls.com/wallpapers/the-hell-cat-4p.jpg";
@@ -21,37 +21,28 @@ function Gallery() {
 
 	const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
+	const [switchGallery, setSwitchGallery] = useState(0);
+
+	function DefaultGallery() {
+		return <>{switchGallery === 0 ? <Slider images={images} /> : <GalleryContent images={images} />}</>;
+	}
+
 	return (
 		<div className="container">
 			<section>
 				<div className="page-section">
-					<div className="ps-header"></div>
-					<div className="app">
-						<Swiper
-							effect={"coverflow"}
-							grabCursor={true}
-							centeredSlides={true}
-							slidesPerView={"auto"}
-							coverflowEffect={{
-								rotate: 50,
-								stretch: 0,
-								depth: 100,
-								modifier: 1,
-								slideShadows: true,
-							}}
-							pagination={{ type: "fraction" }}
-							modules={[EffectCoverflow, Pagination]}
-							loop={true}
-						>
-							{images.map((img, i) => {
-								return (
-									<SwiperSlide>
-										<img src={img} alt={i} key={i} />
-									</SwiperSlide>
-								);
-							})}
-						</Swiper>
+					<div className="ps-header">
+						<h1>გალერეა</h1>
 					</div>
+					<div className="switch-gallery">
+						<div className="gallery-btn" onClick={() => setSwitchGallery(0)}>
+							<TbSlideshow />
+						</div>
+						<div className="gallery-btn" onClick={() => setSwitchGallery(1)}>
+							<BsImages />
+						</div>
+					</div>
+					<DefaultGallery />
 				</div>
 			</section>
 		</div>

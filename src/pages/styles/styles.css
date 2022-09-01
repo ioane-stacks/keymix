@@ -26,7 +26,8 @@ body {
 	background-position: center;
 	background-size: cover;
 	width: 400px;
-	height: 400px;
+	background-color: aqua;
+	margin-bottom: 30px;
 }
 
 .swiper-slide img {
@@ -39,7 +40,4 @@ body {
 }
 .swiper-3d .swiper-slide-shadow-right {
 	background-image: none;
-}
-
-.swiper-slide-active {
 }
