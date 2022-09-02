@@ -1,1 +1,1 @@
-const defaultContent = {}
+const defaultContent = {};

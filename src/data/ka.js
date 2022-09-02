@@ -281,4 +281,10 @@ export const ka = {
 			},
 		],
 	},
+
+	// GALLERY PAGE
+
+	galleryPage: {
+		galleryName: "გალერეა",
+	},
 };

@@ -17,9 +17,10 @@ import Prices from "./pages/Prices";
 import { ka } from "./data/ka.js";
 import { en } from "./data/en.js";
 import { contentka } from "./data/contentka.js";
+import { contenten } from "./data/contenten.js";
 import { defaultContent } from "./data/defaultContent.js";
 import { defaultContent2 } from "./data/defaultContent2.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 
@@ -27,18 +28,22 @@ function App() {
 	const [defLang, setDefLang] = useState(ka);
 	const [defLang2, setDefLang2] = useState(contentka);
 	defaultContent = defLang;
-	defaultContent2 = contentka;
+	defaultContent2 = defLang2;
 
 	function changeLanguage() {
 		if (defLang === ka) {
 			setDefLang(en);
+			setDefLang2(contenten);
 		} else {
 			setDefLang(ka);
 			setDefLang2(contentka);
 		}
+	}
+
+	useEffect(() => {
 		defaultContent = defLang;
 		defaultContent2 = defLang2;
-	}
+	});
 
 	return (
 		<div>

@@ -278,4 +278,10 @@ export const en = {
 			},
 		],
 	},
+
+	// GALLERY PAGE
+
+	galleryPage: {
+		galleryName: "GALLERY",
+	},
 };

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, useParams } from "react-router-dom";
 import { defaultContent } from "../data/defaultContent.js";
 
@@ -10,8 +10,13 @@ function ProductType() {
 
 	const params = useParams();
 
-	let production = productionTypes.filter((prod) => prod.productType.filter((x) => x.id.toString() === params.productId).length > 0)[0].productType;
-	const products = production;
+	const [production, setProduction] = useState(productionTypes.filter((prod) => prod.productType.filter((x) => x.id.toString() === params.productId).length > 0)[0].productType);
+	const [products, setProducts] = useState(production);
+
+	useEffect(() => {
+		setProduction(productionTypes.filter((prod) => prod.productType.filter((x) => x.id.toString() === params.productId).length > 0)[0].productType);
+		setProducts(production);
+	}, [defaultContent, production]);
 
 	if (params.typeId) {
 		return <Outlet />;

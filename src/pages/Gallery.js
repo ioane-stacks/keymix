@@ -6,6 +6,8 @@ import "./styles/gallery.css";
 import { BsImages } from "react-icons/bs";
 import { TbSlideshow } from "react-icons/tb";
 
+import { defaultContent } from "../data/defaultContent.js";
+
 function Gallery() {
 	const img1 = "https://images.hdqwalls.com/wallpapers/the-hell-cat-4p.jpg";
 	const img2 = "https://images.hdqwalls.com/wallpapers/love-season-of-cats-v8.jpg";
@@ -32,7 +34,7 @@ function Gallery() {
 			<section>
 				<div className="page-section">
 					<div className="ps-header">
-						<h1>გალერეა</h1>
+						<h1>{defaultContent.galleryPage.galleryName}</h1>
 					</div>
 					<div className="switch-gallery">
 						<div className="gallery-btn" onClick={() => setSwitchGallery(0)}>

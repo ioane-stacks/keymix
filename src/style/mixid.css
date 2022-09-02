@@ -873,9 +873,36 @@ h1 {
 /* BUTTON END */
 
 .d-block {
-	display: block;
+	display: block !important;
 }
 
+.information-items {
+	width: 25%;
+	/* background-color: white; */
+	font-family: "bpg banner caps";
+}
+
+.information-items ul {
+	list-style-type: none;
+}
+
+.ii-prod-name {
+	background-color: white;
+	padding: 11px 11px 8px 11px;
+	font-size: var(--fs-2);
+	margin-bottom: 4px;
+}
+
+.ii-prod-dropdown {
+	padding-left: 40px;
+}
+
+.iipd-type-name {
+	background-color: white;
+	padding: 11px 11px 8px 11px;
+	font-size: var(--fs-2);
+	margin-bottom: 4px;
+}
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 93%;
