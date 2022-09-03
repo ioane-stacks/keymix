@@ -113,4 +113,77 @@ export const contentka = {
 			],
 		},
 	],
+	//INFORMATION
+
+	information: [
+		{
+			id: 1,
+			menuName: "RFID",
+			menu: [
+				{
+					menuName: "ტექნიკური მიმოხილვა",
+				},
+				{
+					menuName: "MIFARE FAMILY",
+					subMenu: [
+						{
+							menuName: "MIFARE® 1K",
+						},
+						{
+							menuName: "MIFARE® ULTRALIGHT EV1",
+						},
+						{
+							menuName: "MIFARE® ULTRALIGHT C",
+						},
+					],
+				},
+				{
+					menuName: "FUDAN FAMILY",
+					subMenu: [
+						{
+							menuName: "FUDAN 1k",
+							subMenu: [
+								{
+									menuName: "RAGAC ITEM 1",
+								},
+								{
+									menuName: "RAGAC ITEM 2",
+								},
+								{
+									menuName: "RAGAC ITEM 3",
+								},
+							],
+						},
+						{
+							menuName: "FUDAN 4k",
+						},
+						{
+							menuName: "FUDAN FM4442",
+						},
+					],
+				},
+				{
+					menuName: "RFID TAG",
+				},
+			],
+		},
+		{
+			id: 2,
+			menuName: "პლასტიკური ბარათები",
+			menu: [
+				{
+					menuName: "ისტორია",
+				},
+				{
+					menuName: "ფიზიკური მიმოხილვა",
+				},
+				{
+					menuName: "გამოყენებული მასალა",
+				},
+				{
+					menuName: "ISO სტანდარტები",
+				},
+			],
+		},
+	],
 };

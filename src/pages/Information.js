@@ -2,18 +2,92 @@ import { MdOutlineExpandMore, MdOutlineExpandLess } from "react-icons/md";
 import { ReactDOM } from "react";
 import { render } from "@testing-library/react";
 
-function Information() {
-	function expandMenu(dropid) {
-		const dropD = document.getElementById(`dropD${dropid}`);
-		const drop = document.getElementById(`drop${dropid}`);
-		const icon = document.getElementById(`icon${dropid}`);
-		drop.classList.toggle("d-block");
-		// if (drop.className.includes("d-block")) {
-		// 	icon.children[0].remove();
-		// 	// icon.insertAdjacentHTML("afterbegin", `${}`);
-		// }
+import { defaultContent2 } from "../data/defaultContent2.js";
 
-		// console.log(ReactDOM.findDOMNode(<MdOutlineExpandLess />));
+function Information() {
+	const information = defaultContent2.information;
+
+	function InformationList() {
+		return (
+			<div className="listbox">
+				<div className="listbox-items">
+					<ul>
+						{information.map((inf, i) => {
+							return (
+								<li className="listbox-menu" key={inf.menuName}>
+									<div className="listbox-menu-name">
+										<ul>
+											<li>- {inf.menuName}</li>
+										</ul>
+									</div>
+									<div className="listbox-menu-items">
+										<ul>
+											<li className="listbox-submenu">
+												{inf.menu.map((item, j) => {
+													if (item.subMenu) {
+														return (
+															<div key={item.menuName}>
+																<div className="listbox-submenu-name">
+																	<ul>
+																		<li>- {item.menuName}</li>
+																	</ul>
+																</div>
+																<div className="listbox-submenu-items">
+																	<ul>
+																		{item.subMenu.map((subItem, k) => {
+																			if (subItem.subMenu) {
+																				return (
+																					<div key={subItem.menuName}>
+																						<div className="listbox-submenu-name">
+																							<ul>
+																								<li>- {subItem.menuName}</li>
+																							</ul>
+																						</div>
+																						<div className="listbox-submenu-items">
+																							<ul>
+																								{subItem.subMenu.map((itm, o) => {
+																									return (
+																										<li className="single-item" key={itm.menuName}>
+																											{itm.menuName}
+																										</li>
+																									);
+																								})}
+																							</ul>
+																						</div>
+																					</div>
+																				);
+																			} else {
+																				return (
+																					<li className="single-item" key={subItem.menuName + k}>
+																						{subItem.menuName}
+																					</li>
+																				);
+																			}
+																		})}
+																	</ul>
+																</div>
+															</div>
+														);
+													} else {
+														return (
+															<div className="listbox-submenu-name" key={item.menuName + j}>
+																<ul>
+																	<li>{item.menuName}</li>
+																</ul>
+															</div>
+														);
+													}
+												})}
+											</li>
+										</ul>
+									</div>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</div>
+		);
 	}
 
 	return (
@@ -22,58 +96,7 @@ function Information() {
 				<div className="ps-header">
 					<h1>ინფორმაცია</h1>
 				</div>
-				<div className="information-listbox">
-					<div className="information-items">
-						<ul>
-							<li className="ii-prod">
-								<p className="ii-prod-name">- RFID</p>
-								<div className="ii-prod-dropdown">
-									<ul>
-										<li className="ii-prod-name">ტექნიკური მიმოხილვა</li>
-										<li className="iipd-type">
-											<p className="iipd-type-name">- MIFARE FAMILY</p>
-											<div className="ii-prod-dropdown">
-												<ul>
-													<li className="iipd-type-name">RAGAC 1</li>
-													<li className="iipd-type-name">RAGAC 2</li>
-												</ul>
-											</div>
-										</li>
-										<li className="iipd-type">
-											<p className="iipd-type-name">- FUDAN FAMILY</p>
-											<div className="ii-prod-dropdown">
-												<ul>
-													<li className="iipd-type">
-														<ul>
-															<li className="iipd-type">
-																<p className="iipd-type-name">- RAGAC FAMILY 1</p>
-																<div className="ii-prod-dropdown">
-																	<ul>
-																		<li className="iipd-type-name">FAMILY 1</li>
-																		<li className="iipd-type-name">FAMILY 2</li>
-																	</ul>
-																</div>
-															</li>
-															<li className="iipd-type">
-																<p className="iipd-type-name">- RAGAC FAMILY 2</p>
-																<div className="ii-prod-dropdown">
-																	<ul>
-																		<li className="iipd-type-name">FAMILY 1</li>
-																		<li className="iipd-type-name">FAMILY 2</li>
-																	</ul>
-																</div>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<InformationList />
 			</section>
 		</div>
 	);

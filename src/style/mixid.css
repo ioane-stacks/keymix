@@ -64,6 +64,10 @@ h1 {
 	font-family: "bpg banner caps";
 }
 
+ul {
+	list-style-type: none;
+}
+
 /* TOP-HEADER */
 .top-header {
 	width: 100%;
@@ -785,6 +789,8 @@ h1 {
 	padding-top: 40px;
 	font-size: var(--fs-2);
 	user-select: none;
+	display: flex;
+	flex-direction: column;
 }
 
 .ps-header {
@@ -876,33 +882,53 @@ h1 {
 	display: block !important;
 }
 
-.information-items {
-	width: 25%;
-	/* background-color: white; */
+/* LISTBOX START */
+
+.listbox {
+	display: flex;
+	width: 350px;
+	min-height: 500px;
+	background-color: white;
 	font-family: "bpg banner caps";
 }
 
-.information-items ul {
-	list-style-type: none;
+.listbox-items {
+	width: 100%;
 }
 
-.ii-prod-name {
-	background-color: white;
-	padding: 11px 11px 8px 11px;
+.listbox-menu {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.listbox-menu-name {
+	padding: 12px 20px 7px 20px;
 	font-size: var(--fs-2);
-	margin-bottom: 4px;
+	/* border-bottom: 1px solid var(--bg-lightersilver); */
 }
 
-.ii-prod-dropdown {
+.listbox-submenu {
+	width: 100%;
 	padding-left: 40px;
 }
 
-.iipd-type-name {
-	background-color: white;
-	padding: 11px 11px 8px 11px;
-	font-size: var(--fs-2);
-	margin-bottom: 4px;
+.listbox-submenu-name {
+	font-size: var(--fs-3);
+	border-bottom: 1px solid var(--bg-lightersilver);
+	padding: 10px 0 5px 0;
 }
+
+.listbox-submenu-items {
+	padding-left: 40px;
+}
+
+.single-item {
+	font-size: var(--fs-4);
+	padding: 7px 0 2px 0;
+	border-bottom: 1px solid var(--bg-lightersilver);
+}
+
+/* LISTBOX END */
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 93%;
