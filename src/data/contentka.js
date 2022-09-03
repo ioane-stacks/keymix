@@ -185,5 +185,23 @@ export const contentka = {
 				},
 			],
 		},
+		{
+			id: 3,
+			menuName: "სამაჯურები",
+			menu: [
+				{
+					menuName: "ისტორია",
+				},
+				{
+					menuName: "ფიზიკური მიმოხილვა",
+				},
+				{
+					menuName: "გამოყენებული მასალა",
+				},
+				{
+					menuName: "ISO სტანდარტები",
+				},
+			],
+		},
 	],
 };

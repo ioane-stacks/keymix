@@ -7,6 +7,13 @@ import { defaultContent2 } from "../data/defaultContent2.js";
 function Information() {
 	const information = defaultContent2.information;
 
+	function showSubMenu(itemId) {
+		const item = document.getElementById(itemId);
+		const item2 = document.getElementById(itemId + "-a");
+		item2.classList.toggle("d-block");
+		item.children[0].children[0].classList.toggle("expanded");
+	}
+
 	function InformationList() {
 		return (
 			<div className="listbox">
@@ -15,35 +22,35 @@ function Information() {
 						{information.map((inf, i) => {
 							return (
 								<li className="listbox-menu" key={inf.menuName}>
-									<div className="listbox-menu-name">
+									<div className="listbox-menu-name" id={`lm${i}`} onClick={() => showSubMenu(`lm${i}`)}>
 										<ul>
-											<li>- {inf.menuName}</li>
+											<li className="collapsed">{inf.menuName}</li>
 										</ul>
 									</div>
-									<div className="listbox-menu-items">
+									<div className="listbox-menu-items" id={`lm${i}-a`}>
 										<ul>
 											<li className="listbox-submenu">
 												{inf.menu.map((item, j) => {
 													if (item.subMenu) {
 														return (
 															<div key={item.menuName}>
-																<div className="listbox-submenu-name">
+																<div className="listbox-submenu-name" id={`ls${j}`} onClick={() => showSubMenu(`ls${j}`)}>
 																	<ul>
-																		<li>- {item.menuName}</li>
+																		<li className="collapsed">{item.menuName}</li>
 																	</ul>
 																</div>
-																<div className="listbox-submenu-items">
+																<div className="listbox-submenu-items" id={`ls${j}-a`}>
 																	<ul>
 																		{item.subMenu.map((subItem, k) => {
 																			if (subItem.subMenu) {
 																				return (
 																					<div key={subItem.menuName}>
-																						<div className="listbox-submenu-name">
+																						<div className="listbox-submenu-name" id={`ls${k}`} onClick={() => showSubMenu(`ls${k}`)}>
 																							<ul>
-																								<li>- {subItem.menuName}</li>
+																								<li className="collapsed">{subItem.menuName}</li>
 																							</ul>
 																						</div>
-																						<div className="listbox-submenu-items">
+																						<div className="listbox-submenu-items" id={`ls${k}-a`}>
 																							<ul>
 																								{subItem.subMenu.map((itm, o) => {
 																									return (
