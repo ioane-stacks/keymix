@@ -1,0 +1,29 @@
+.price-container {
+	width: 80%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.product-pick {
+	width: 100%;
+	height: 300px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+}
+.product-pick article {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.product-pick article h3 {
+	margin-bottom: 20px;
+}

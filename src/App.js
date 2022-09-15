@@ -12,7 +12,7 @@ import Product from "./pages/Product";
 import Service from "./pages/Service";
 import Gallery from "./pages/Gallery";
 import Information from "./pages/Information";
-import Prices from "./pages/Prices";
+import Prices from "./pages/Prices/Prices";
 
 import { ka } from "./data/ka.js";
 import { en } from "./data/en.js";
