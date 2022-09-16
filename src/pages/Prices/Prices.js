@@ -3,7 +3,7 @@ import "./prices.css";
 
 function Prices() {
 	return (
-		<div className="container">
+		<div className="container w-93">
 			<section className="page-section">
 				<div className="ps-header">
 					<h1>ფასები</h1>

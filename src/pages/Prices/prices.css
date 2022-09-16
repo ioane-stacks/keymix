@@ -1,6 +1,5 @@
 .price-container {
 	width: 80%;
-	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
@@ -22,8 +21,62 @@
 	align-items: center;
 	flex-direction: column;
 	cursor: pointer;
+	background-color: white;
+	padding: 0 20px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	font-family: "Chakra Petch", sans-serif;
+}
+
+.product-pick article:hover {
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .product-pick article h3 {
 	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.prices {
+	/* background-color: gray; */
+	display: flex;
+	min-height: 500px;
+}
+
+.prices-sidebar {
+	width: 270px;
+}
+
+.prices-listbox {
+	/* background-color: silver; */
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.w-93 {
+	width: 93% !important;
+}
+
+.prices-listhead {
+	padding: 5px;
+	background-color: white;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.prices-item {
+	font-size: 1.2rem;
+	margin-left: 20px;
+	padding: 4px;
+	background-color: white;
+	margin-bottom: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	/* display: none; */
 }
