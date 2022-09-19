@@ -45,6 +45,7 @@
 
 .prices-sidebar {
 	width: 270px;
+	position: relative;
 }
 
 .prices-listbox {
@@ -58,8 +59,12 @@
 	width: 93% !important;
 }
 
+.items-listbox {
+	/* position: relative; */
+}
+
 .prices-listhead {
-	padding: 5px;
+	padding: 5px 5px 5px 10px;
 	background-color: white;
 	margin-bottom: 5px;
 	margin-top: 10px;
@@ -70,13 +75,49 @@
 	font-size: 1.2rem;
 }
 
+.prices-listhead::before {
+	content: "+ ";
+	font-weight: 100;
+}
+
+.menu-expanded::before {
+	content: "- " !important;
+}
+
+.item-list {
+	min-width: 300px;
+	max-height: 500px;
+	position: absolute;
+	top: 15px;
+	left: calc(100% + 10px);
+	display: none;
+	background-color: white;
+	padding: 8px;
+	margin-bottom: 20px;
+	overflow: auto;
+	z-index: 1;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item-list::-webkit-scrollbar {
+	width: 5px;
+}
+
+.item-list::-webkit-scrollbar-thumb {
+	background-color: #666;
+}
+
+.show-item {
+	display: block !important;
+}
+
 .prices-item {
 	font-size: 1.2rem;
-	margin-left: 20px;
-	padding: 4px;
-	background-color: white;
-	margin-bottom: 5px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 4px 4px 4px 10px;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 8px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-	/* display: none; */
+	display: block;
+	position: relative;
 }

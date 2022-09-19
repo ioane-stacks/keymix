@@ -28,9 +28,9 @@ const Products = ({ setProduct }) => {
 		<section className="product-pick">
 			{data &&
 				data.map((p) => {
-					const { productId, productName, imageUrl } = p;
+					const { Id, productName, imageUrl } = p;
 					return (
-						<article key={productId} onClick={() => setProduct(productId)}>
+						<article key={productName} onClick={() => setProduct(Id)}>
 							<h3>{productName}</h3>
 							<img src={"/keymix" + imageUrl} alt={productName} />
 						</article>

@@ -4,6 +4,8 @@ import { BASE_URL } from "../../BASE_URL";
 
 function PlasticCards({ setProduct }) {
 	const [data, setData] = useState([]);
+	const [currentItems, setCurrentItems] = useState("");
+	const [currentMenu, setCurrentMenu] = useState("");
 
 	useEffect(() => {
 		getPlasticCards();
@@ -16,7 +18,34 @@ function PlasticCards({ setProduct }) {
 		}
 	};
 
-	const menuList = ["barcode", "card dimension", "card style", "contacted chip", "magnetic strip", "rfid"];
+	const expandMenu = (itemId, menuId) => {
+		showList(itemId);
+		showMenu(menuId);
+	};
+
+	const showList = (itemId) => {
+		if (currentItems === itemId) document.getElementById(itemId).classList.toggle("show-item");
+		else {
+			document.querySelectorAll(".item-list").forEach((item) => {
+				if (item.className.includes("show-item")) item.classList.remove("show-item");
+				document.getElementById(itemId).classList.add("show-item");
+				setCurrentItems(itemId);
+			});
+		}
+	};
+
+	const showMenu = (menuId) => {
+		if (currentMenu === menuId) document.getElementById(menuId).classList.toggle("menu-expanded");
+		else {
+			document.querySelectorAll(".prices-listhead").forEach((item) => {
+				if (item.className.includes("menu-expanded")) item.classList.remove("menu-expanded");
+				document.getElementById(menuId).classList.add("menu-expanded");
+				setCurrentMenu(menuId);
+			});
+		}
+	};
+
+	const menuList = ["card dimension", "card style", "barcode", "contacted chip", "magnetic strip", "rfid"];
 
 	return (
 		<div className="prices w-93">
@@ -25,12 +54,18 @@ function PlasticCards({ setProduct }) {
 					{data.map((item, i) => {
 						return (
 							<div className="items-listbox">
-								<p key={i} className="prices-listhead">
+								<p key={i} id={`menu${i}`} className="prices-listhead" onClick={() => expandMenu(`item${i}`, `menu${i}`)}>
 									{menuList[i]}
 								</p>
-								{item[menuList[i].split(" ").join("")].map((subitem) => {
-									return <p className="prices-item">{subitem.name}</p>;
-								})}
+								<div id={`item${i}`} className="item-list">
+									{item[menuList[i].split(" ").join("")].map((subitem) => {
+										return (
+											<p key={subitem.Id} className="prices-item">
+												{subitem.name}
+											</p>
+										);
+									})}
+								</div>
 							</div>
 						);
 					})}
