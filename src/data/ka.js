@@ -159,7 +159,7 @@ export const ka = {
 				productType: [
 					{
 						id: 2,
-						typeId: "contactlesscard",
+						typeId: "bracelet",
 						typeName: "უკონტაქტო სმარტ ბარათი",
 						image: magneticStripe,
 					},

@@ -1,7 +1,7 @@
 import PriceProducts from "./PriceProducts";
 import "./prices.css";
 
-function Prices() {
+function Prices({ sectionId }) {
 	return (
 		<div className="container w-93">
 			<section className="page-section">

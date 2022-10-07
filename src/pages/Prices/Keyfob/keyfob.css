@@ -1,0 +1,276 @@
+.keyfob-style {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.keyfob-object {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.keyfob-circle {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-color: rgb(16, 102, 151);
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.keyfob-square {
+	width: 137px;
+	height: 137px;
+	position: absolute;
+	background-color: rgb(16, 102, 151);
+	top: 64%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-radius: 26px;
+}
+
+.keyfob-square-cut {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #eee;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 188px;
+	box-shadow: inset 2px 2px 4px rgb(0 0 0 / 50%);
+}
+
+.keyfob-keyround {
+	width: 125px;
+	height: 125px;
+	position: absolute;
+	border: 3px solid rgb(12, 77, 114);
+	top: 36%;
+	left: 50%;
+	transform: translate(-50%, -37%);
+	border-radius: 50%;
+}
+
+.keyfob-key {
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	background-color: rgb(12, 77, 114);
+	top: 37%;
+	left: 50%;
+	transform: translate(-50%, -37%);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.keyfob-key-blending {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: radial-gradient(rgb(26, 114, 165), rgb(12, 77, 114));
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.keyfob-material {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.keyfob-shape {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.keyfob-wlogo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.keyfob-wlogo-style {
+	width: 90px;
+	height: 90px;
+	background-image: url(../../../../public/images/bracelet/logocalc.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 21%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.7;
+}
+
+.keyfob-qr-code {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.keyfob-qrcode-style {
+	width: 30px;
+	height: 30px;
+	background-image: url(../../../../public/images/qrcalc.svg);
+	background-size: 125%;
+	background-position: center;
+	z-index: 0;
+	position: absolute;
+	left: 27px;
+	top: 135px;
+	transform: rotate(315deg);
+}
+
+.keyfob-bar-code {
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.keyfob-bar-code-style {
+	width: 45px;
+	height: 31px;
+	background-image: url(../../../../public/images/barcalc.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 0;
+	position: absolute;
+	left: 79px;
+	top: 153px;
+}
+
+.keyfob-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.keyfob-text-style {
+	position: absolute;
+	top: 152px;
+	left: 142px;
+	font-size: 1.1rem;
+	font-weight: bolder;
+	transform: rotate(313deg);
+}
+
+.keyfob-chip-number {
+	min-width: 200%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.keyfob-chip-number-style {
+	font-size: 0.7rem;
+	position: absolute;
+	top: 139px;
+	left: 123px;
+	font-weight: bolder;
+	transform: rotate(311deg);
+}
+
+.keyfob-rfid {
+	min-width: 200%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.keyfob-rfid-style {
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	border: 3px solid rgb(241, 199, 142);
+	position: absolute;
+	left: 25%;
+	top: 19%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	opacity: 0.9;
+}
+
+.keyfob-rfid-chip {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222;
+}
+.keyfob-rfid-chip-stick-1 {
+	height: 42px;
+	width: 1px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 0px;
+	left: 42px;
+}
+
+.keyfob-rfid-chip-stick-2 {
+	height: 41px;
+	width: 1px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 0px;
+	left: 51px;
+}
+
+.keyfob-back-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: calc(12px * var(--pc-unit));
+}
+
+.keyfob-background-border {
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.keyfob-back-image-style {
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../../public/images/mixidcalc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	border-radius: calc(12px * var(--pc-unit));
+	background-size: cover;
+}

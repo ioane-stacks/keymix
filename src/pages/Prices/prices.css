@@ -4,6 +4,7 @@
 	margin-right: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	position: relative;
 }
 
 .product-pick {
@@ -37,6 +38,8 @@
 	text-transform: uppercase;
 }
 
+/* PRICES */
+
 .prices {
 	/* background-color: gray; */
 	display: flex;
@@ -44,11 +47,13 @@
 }
 
 .prices-sidebar {
-	width: 270px;
 	position: relative;
+	display: flex;
+	font-family: "Chakra Petch", sans-serif;
 }
 
-.prices-listbox {
+.menu-listbox {
+	max-width: 270px;
 	/* background-color: silver; */
 	display: flex;
 	flex-direction: column;
@@ -60,64 +65,250 @@
 }
 
 .items-listbox {
-	/* position: relative; */
+	font-family: "Chakra Petch", sans-serif;
+	padding-left: 10px;
+	min-width: 300px;
 }
 
 .prices-listhead {
-	padding: 5px 5px 5px 10px;
+	padding: 8px 5px 8px 10px;
 	background-color: white;
 	margin-bottom: 5px;
-	margin-top: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.2rem;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
 }
 
 .prices-listhead::before {
-	content: "+ ";
+	content: "+ ";
 	font-weight: 100;
+	margin-bottom: 2px;
 }
 
 .menu-expanded::before {
-	content: "- " !important;
+	content: "- " !important;
 }
 
 .item-list {
-	min-width: 300px;
-	max-height: 500px;
-	position: absolute;
-	top: 15px;
-	left: calc(100% + 10px);
-	display: none;
+	max-width: 290px;
+	max-height: 400px;
+	position: relative;
+	top: 5px;
 	background-color: white;
-	padding: 8px;
+	padding: 12px;
 	margin-bottom: 20px;
+	border-radius: 7px;
 	overflow: auto;
 	z-index: 1;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .item-list::-webkit-scrollbar {
-	width: 5px;
+	width: 3px;
 }
 
 .item-list::-webkit-scrollbar-thumb {
-	background-color: #666;
+	background-color: #999;
+	border-radius: 5px;
+}
+
+.item-list::-webkit-scrollbar-button {
+	background-color: transparent;
 }
 
 .show-item {
 	display: block !important;
 }
 
+.hide {
+	display: none !important;
+}
+
 .prices-item {
 	font-size: 1.2rem;
-	padding: 4px 4px 4px 10px;
+	padding: 6px 10px 4px 10px;
 	background-color: rgb(255, 255, 255);
-	margin-bottom: 8px;
+	margin-top: 12px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	display: block;
 	position: relative;
+	text-transform: capitalize;
+	border-radius: 3px;
+}
+
+.prices-item:nth-child(1) {
+	margin-top: 0px;
+}
+
+.selected-item {
+	background-color: rgb(24, 168, 80);
+}
+
+.extended-menu {
+	width: 265px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 5px 10px;
+	margin-top: 15px;
+}
+
+.extended-menu h3 {
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.tooltip {
+	min-width: 80px;
+	min-height: 30px;
+	/* background-color: silver; */
+	position: relative;
+	font-family: "BPG Banner Caps";
+	z-index: 3;
+	display: inline-block;
+}
+
+.tooltip-stick-bottom {
+	width: 2px;
+	height: 46px;
+	border: 0 solid transparent;
+	top: 36px;
+	left: 8px;
+	position: absolute;
+	background-color: rgba(247, 219, 17, 1);
+	filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.4));
+	z-index: 2;
+}
+.tooltip-stick-top {
+	width: 2px;
+	height: 0px;
+	border: 0 solid transparent;
+	position: relative;
+	top: 0px;
+	left: 7px;
+	background-color: rgba(247, 219, 17, 1);
+	filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.4));
+	z-index: 0;
+	display: block;
+}
+.tooltip-stick-left {
+	width: 39px;
+	height: 2px;
+	border: 0 solid transparent;
+	position: relative;
+	top: -13px;
+	left: 1px;
+	background-color: rgba(247, 219, 17, 1);
+	filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.4));
+	z-index: 0;
+	display: inline-block;
+}
+
+.tooltip-stick-schematic {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip-stick-schematic div {
+	position: absolute;
+}
+
+.tooltip-info {
+	min-width: 50px;
+	min-height: 15px;
+	background-color: rgba(247, 219, 17, 1);
+	position: relative;
+	padding: 5px 5px;
+	left: 0px;
+	top: 0px;
+	border-radius: 5px;
+	filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.4));
+	display: inline-block;
+	z-index: 2;
+	text-transform: uppercase;
+}
+
+.tooltip-info p {
+	font-size: 10px;
+}
+
+.horisont {
+	width: 100%;
+	height: 1px;
+	background-color: rgb(173, 157, 35);
+	margin-bottom: 3px;
+}
+
+.board {
+	width: 580px;
+	min-height: 600px;
+	margin-top: 70px;
+	margin-left: 20px;
+	padding: 20px;
+	/* background-color: #999; */
+	/* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-family: "BPG Banner Caps";
+}
+
+.board-footer {
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+	position: absolute;
+	top: calc(100% - 80px);
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	font-family: "BPG Banner Caps";
+}
+
+.board-quantity-container {
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-bottom: 12px;
+}
+
+.price {
+	margin-left: auto;
+	display: flex;
+	padding: 10px 10px 6px 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.quantity-label {
+	font-size: 12px;
+}
+
+.quantity {
+	height: 60px;
+	width: 140px;
+	border-radius: 4px;
+	border: none;
+	-moz-appearance: textfield;
+	outline: none;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	font-family: "BPG Banner Caps";
+	padding-left: 5px;
+}
+
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }

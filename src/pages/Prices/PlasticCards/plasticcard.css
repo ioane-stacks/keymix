@@ -1,0 +1,352 @@
+:root {
+	--pc-unit: 1.2;
+}
+
+.plastic-card {
+	width: calc(323.52px * var(--pc-unit));
+	height: calc(204px * var(--pc-unit));
+	background-color: white;
+	box-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+	position: relative;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	border-radius: calc(12px * var(--pc-unit));
+}
+
+.rfid-13 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.rfid-13-chip {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	background-color: #333;
+}
+.rfid-13-antena {
+	width: 335px;
+	height: 190px;
+	border: 4px solid rgb(241, 199, 142);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+.rfid-13-antena-stick-1 {
+	width: 1px;
+	height: 20px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 30px;
+	left: 50px;
+}
+.rfid-13-antena-stick-2 {
+	width: 1px;
+	height: 20px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 30px;
+	left: 64px;
+}
+
+.rfid-125 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.rfid-125-chip {
+	width: 13px;
+	height: 20px;
+	position: absolute;
+	right: 90px;
+	top: 73px;
+	background-color: #333;
+	transform: rotate(-20deg);
+}
+
+.rfid-125-antena {
+	width: 150px;
+	height: 150px;
+	border: 8px solid rgb(241, 199, 142);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.rfid-125-antena-stick-1 {
+	width: 30px;
+	height: 1px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 81px;
+	right: 104px;
+	transform: rotate(-20deg);
+}
+
+.rfid-125-antena-stick-2 {
+	width: 30px;
+	height: 1px;
+	background-color: rgb(241, 199, 142);
+	position: absolute;
+	top: 98px;
+	right: 98px;
+	transform: rotate(-20deg);
+}
+
+.magnetic-strip {
+	width: 100%;
+	height: 45.35px;
+	background-color: #111;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	z-index: 1;
+}
+
+.magnetic-strip-boxlight {
+	width: 50%;
+	height: 50px;
+	/* background-color: #333; */
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+}
+
+.magnetic-strip-lighting {
+	width: 200%;
+	height: 343%;
+	background-image: linear-gradient(181deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+	position: absolute;
+	left: 0px;
+	top: -3px;
+	border-radius: 50%;
+}
+
+.contacted-chip {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contacted-chip-border {
+	width: 68.16px;
+	height: 45px;
+	background-image: url(../../../../public/images/contacted.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 40px;
+	top: 90px;
+}
+
+.card-cutting {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-cutting-cut {
+	width: 15px;
+	height: 15px;
+	background-color: #eee;
+	border-radius: 7px;
+	border: 1px solid #aaa;
+	position: absolute;
+	right: 4px;
+	top: 6px;
+	box-shadow: inset 1px 1px 3px rgb(0 0 0 / 30%);
+}
+
+.card-style {
+	width: 100%;
+	height: 55px;
+	top: 70px;
+	left: 77px;
+	position: relative;
+}
+
+.card-style-card {
+	width: calc(323.52px * 0.3);
+	height: calc(204px * 0.3);
+	background-color: white;
+	border-radius: calc(12px * 0.3);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.qr-code {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.qr-code-style {
+	width: 48px;
+	height: 48px;
+	background-image: url(../../../../public/images/qrcalc.svg);
+	background-size: 125%;
+	background-position: center;
+	z-index: 0;
+	position: absolute;
+	left: 296px;
+	top: 117px;
+}
+
+.bar-code {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bar-code-style {
+	width: 76px;
+	height: 47px;
+	background-image: url(../../../../public/images/barcalc.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 0;
+	position: absolute;
+	left: 214px;
+	top: 117px;
+}
+
+.back-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: calc(12px * var(--pc-unit));
+}
+
+.back-image-style {
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../../public/images/mixidcalc.png);
+	background-position: center;
+	opacity: 0.7;
+	border-radius: calc(12px * var(--pc-unit));
+}
+
+.avatar {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.avatar-style {
+	width: 80px;
+	height: 90px;
+	position: absolute;
+	background-color: #555;
+	left: 110px;
+	top: 74px;
+	overflow: hidden;
+}
+
+.human-head {
+	width: 50px;
+	height: 50px;
+	background-color: #777;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	transform: translateX(-50%);
+	border: 4px solid #555;
+	z-index: 2;
+}
+
+.human-body {
+	width: 79%;
+	height: 80px;
+	background-color: #777;
+	position: absolute;
+	left: 50%;
+	top: 45px;
+	border-radius: 30px;
+	transform: translateX(-50%);
+}
+
+.chip-number {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chip-number-style {
+	font-size: 15px;
+	left: 251px;
+	top: 222px;
+	position: relative;
+	font-weight: bold;
+	color: #222;
+}
+
+.full-name {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.full-name-style {
+	position: absolute;
+	top: 91px;
+	left: 196px;
+	font-size: 16px;
+	color: #111;
+	font-weight: bold;
+}
+
+.embossing {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.embossing-style {
+	font-size: 1.7rem;
+	letter-spacing: 0.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25px;
+	position: absolute;
+	text-shadow: -2px -1px 2px rgb(255 255 255 / 70%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	background-color: rgb(16, 42, 87);
+	color: transparent;
+	font-weight: bold;
+}
